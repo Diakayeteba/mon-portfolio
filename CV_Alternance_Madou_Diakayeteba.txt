@@ -1,0 +1,75 @@
+                                                         MADOU DIAKAYETEBA
+                                                         Développeur Full-Stack & Étudiant Master I
+
+                                                             madoudiakayeteba@gmail.com
+                                                             Sarcelles, France, 95
+                                                             +33759159183
+
+
+                                                         SITES WEB ET LIENS SOCIAUX
+                                                         LinkedIn: https://www.linkedin.com/in/madou-diakayeteba-919b662bb
+                                                         GitHub: https://github.com/Diakayeteba
+
+
+                                                         EXPÉRIENCE
+                                                         Développeur Web Freelance, Auto-Entrepreneur
+                                                         Janv. 2026
+RÉSUMÉ                                                   Développer un tableau de bord interactif avec Vue.js pour visualiser en temps réel les
+                                                         statistiques académiques. Mettre en place un environnement CI/CD pour automatiser le
+Actuellement en Master 1 Intelligence Artificielle, je   déploiement et les tests de l'application. Intégrer une API de paiement sécurisé pour
+recherche une alternance pour mettre mon expertise       faciliter les transactions financières dans l'application éducative.
+technique au service de vos projets en tant que
+Développeur IA ou Architecte des SI.                     Enseignant de Mathématiques, Lycée Privé Fatoumata Siré, Bamako
+                                                         Janv. 2025
+COMPÉTENCES                                                Amélioration des résultats des élèves de 20% en un an.
+                                                           Mise en place de projets mathématiques pratiques et engageants.
+   HTML5
+                                                           Collaboration avec les parents pour suivre les progrès des élèves.
+   CSS3
+   JavaScript
+                                                         Assistant Maintenance Informatique, Sécurité et Formation, EGITCOM
+   React (bases)
+                                                         Janv. 2024 — Janv. 2025
+   Python
+                                                           Assistance technique rapide pour maximiser la satisfaction client.
+   Django
+                                                           Formation des utilisateurs pour une adoption efficace des outils informatiques.
+   PHP (Laravel – projets personnels)
+                                                           Mise en place de protocoles de sécurité pour protéger les données sensibles.
+   Git / GitHub
+   Agilité & Scrum                                       Assistant Informatique, EGITCOM, Bamako
+                                                         Juil. 2024 — Oct. 2024
+   Développement Web
+                                                         • Assistance utilisateurs et support de premier niveau.
+   Gestion Base de Données
+                                                         • Installation et configuration de postes de travail.
+   API RESTful
+                                                         • Sensibilisation aux bonnes pratiques numériques.
+   JavaScript Avancé
+
+                                                         FORMATION
+LANGUES
+                                                         Master 1, Intelligence Artificielle, ESIIA, Torcy, France
+   Français
+                                                         2025
+   Anglais
+                                                         Licence, Génie Informatique, Institut des Sciences Appliquées (ISA), Mali
+                                                         2021 — 2025
+   Bambara
+                                                           Enseignements clés : algorithmique, programmation orientée objet, bases de données,
+                                                           génie logiciel, systèmes et réseaux, systèmes d’information.
+LOISIRS ET INTÉRÊTS                                        Stage en entreprise avec évaluation excellente
+                                                           Spécialisations : développement logiciel, architecture des systèmes d’information.
+   Arts martiaux (Karaté Shotokan, Kickboxing)
+                                                           Projet de fin d’études : Plateforme de gestion des cours en ligne par visioconférence
+   Technologies numériques                                 (PHP, Laravel, MySQL, API Zoom).
+   Entrepreneuriat
+   Voyages
+                                                         Baccalauréa, Baccalauréat Scientifique– Série TSE, Mali
+                                                         2019 — 2020
+CERTIFICATIONS ET LICENCES
+                                                           Excellents résultats en mathématiques (moyenne 15/20).
+AWS Cloud Practitioner (notions), Certificat de
+formation en réseaux informatiques, Certificat de          Participation à des concours scientifiques
+travail– APAJH France
+

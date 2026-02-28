@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio de Madou Diakayeteba — Développeur Full-Stack &amp; Étudiant Master IA" />
+  <meta name="keywords" content="développeur, full-stack, intelligence artificielle, portfolio, Madou Diakayeteba" />
+  <meta name="author" content="Madou Diakayeteba" />
+  <title>Madou Diakayeteba | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#hero">MD</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about"      data-i18n="nav.about"></a></li>
+        <li><a href="#experience" data-i18n="nav.experience"></a></li>
+        <li><a href="#projects"   data-i18n="nav.projects"></a></li>
+        <li><a href="#stack"      data-i18n="nav.stack"></a></li>
+        <li><a href="#contact"    data-i18n="nav.contact"></a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="fr">FR</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div id="floatingIcons" class="floating-icons"></div>
+    <div class="hero-content">
+      <div class="hero-text fade-up">
+        <h1 class="hero-greeting" id="heroGreeting"></h1>
+        <p class="hero-title" data-i18n="hero.title"></p>
+        <p class="hero-location">
+          <i class="fas fa-map-marker-alt"></i>
+          <span data-i18n="hero.location"></span>
+        </p>
+        <div class="hero-cta">
+          <a href="#contact"  class="btn btn-primary"   data-i18n="hero.cta_contact"></a>
+          <a href="#projects" class="btn btn-secondary" data-i18n="hero.cta_work"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-up">
+          <img
+            src="photo_profil.png"
+            alt="Madou Diakayeteba"
+            class="profile-img"
+          />
+        </div>
+        <div class="about-info fade-up">
+          <h2 data-i18n="about.title"></h2>
+          <p data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/madou-diakayeteba-919b662bb"
+               target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:madoudiakayeteba@gmail.com"
+               class="social-link" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://github.com/Diakayeteba"
+               target="_blank" rel="noopener noreferrer"
+               class="social-link" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <h2 class="section-title fade-up" data-i18n="experience.title"></h2>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title fade-up" data-i18n="projects.title"></h2>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== STACK ===== -->
+  <section class="stack" id="stack">
+    <div class="container">
+      <h2 class="section-title fade-up" data-i18n="stack.title"></h2>
+      <div id="stackContent"></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title fade-up" data-i18n="contact.title"></h2>
+      <p class="contact-subtitle fade-up" data-i18n="contact.subtitle"></p>
+      <div class="contact-cta fade-up">
+        <a href="mailto:madoudiakayeteba@gmail.com" class="btn btn-primary">
+          <i class="fas fa-envelope"></i>
+          <span data-i18n="contact.email"></span>
+        </a>
+        <a href="https://www.linkedin.com/in/madou-diakayeteba-919b662bb"
+           target="_blank" rel="noopener noreferrer"
+           class="btn btn-secondary">
+          <i class="fab fa-linkedin"></i>
+          <span data-i18n="contact.linkedin"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer.copyright"></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

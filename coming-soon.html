@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet en développement — Madou Diakayeteba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <style>
+    :root {
+      --primary:   #2563eb;
+      --secondary: #1e40af;
+      --text:      #1f2937;
+      --light:     #6b7280;
+      --bg:        #ffffff;
+      --section:   #f3f4f6;
+      --radius:    1rem;
+      --shadow:    0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+      --shadow-lg: 0 20px 25px -5px rgba(0,0,0,.12), 0 10px 10px -5px rgba(0,0,0,.06);
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family:'Poppins',sans-serif; color:var(--text); background:var(--bg); line-height:1.6; }
+    a { text-decoration:none; }
+    img { display:block; max-width:100%; }
+
+    /* ── NAV ── */
+    .navbar {
+      position:fixed; top:0; left:0; right:0; height:66px;
+      background:rgba(255,255,255,.96); backdrop-filter:blur(10px);
+      border-bottom:1px solid rgba(0,0,0,.06); z-index:100;
+      display:flex; align-items:center;
+    }
+    .nav-inner {
+      max-width:1200px; margin:0 auto; padding:0 2rem; width:100%;
+      display:flex; align-items:center; justify-content:space-between;
+    }
+    .back-btn {
+      display:inline-flex; align-items:center; gap:.5rem;
+      color:var(--primary); font-weight:600; font-size:.9rem;
+      transition:gap .2s;
+    }
+    .back-btn:hover { gap:.8rem; }
+    .lang-sw { display:flex; align-items:center; gap:.4rem; }
+    .lang-sw span { color:var(--light); font-size:.85rem; }
+    .lbtn {
+      background:none; border:1.5px solid transparent; padding:3px 9px;
+      border-radius:6px; cursor:pointer; font-size:.82rem; font-weight:500;
+      color:var(--light); font-family:'Poppins',sans-serif; transition:all .2s;
+    }
+    .lbtn:hover { background:var(--section); color:var(--text); }
+    .lbtn.active { border-color:var(--primary); color:var(--primary); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height:60vh;
+      background:linear-gradient(135deg,#f0f9ff 0%,#dbeafe 50%,#ede9fe 100%);
+      display:flex; align-items:center; justify-content:center;
+      padding:100px 2rem 4rem; text-align:center; position:relative; overflow:hidden;
+    }
+    .hero::before {
+      content:'';
+      position:absolute; inset:0;
+      background:radial-gradient(ellipse at 70% 40%, rgba(37,99,235,.08) 0%, transparent 60%);
+    }
+    .hero-body { position:relative; z-index:1; max-width:700px; }
+    .project-icon-wrap {
+      width:90px; height:90px; border-radius:50%;
+      background:var(--primary); color:#fff;
+      display:inline-flex; align-items:center; justify-content:center;
+      font-size:2.4rem; margin-bottom:1.5rem;
+      box-shadow:0 0 0 12px rgba(37,99,235,.12), var(--shadow-lg);
+    }
+    .status-badge {
+      display:inline-flex; align-items:center; gap:.45rem;
+      background:#dcfce7; color:#16a34a;
+      padding:.3rem .9rem; border-radius:50px;
+      font-size:.8rem; font-weight:600; margin-bottom:1.2rem;
+      border:1px solid #86efac;
+    }
+    .status-badge span.dot {
+      width:8px; height:8px; border-radius:50%; background:#16a34a;
+      animation:pulse 1.4s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100%{ opacity:1; transform:scale(1); }
+      50%    { opacity:.5; transform:scale(1.3); }
+    }
+    .hero h1 {
+      font-size:clamp(1.7rem,4vw,2.8rem); font-weight:700;
+      color:var(--text); margin-bottom:.8rem; line-height:1.25;
+    }
+    .hero p.tagline {
+      font-size:clamp(.95rem,2vw,1.1rem); color:var(--light);
+      max-width:560px; margin:0 auto;
+    }
+
+    /* ── MAIN CONTENT ── */
+    .content { max-width:900px; margin:0 auto; padding:4rem 2rem 6rem; }
+
+    /* info cards row */
+    .info-grid {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:1.2rem; margin-bottom:3rem;
+    }
+    .info-card {
+      background:var(--section); border-radius:var(--radius);
+      padding:1.4rem 1.6rem; display:flex; flex-direction:column; gap:.4rem;
+    }
+    .info-card .ic-label {
+      font-size:.75rem; font-weight:600; text-transform:uppercase;
+      letter-spacing:.08em; color:var(--light);
+    }
+    .info-card .ic-value {
+      font-size:1rem; font-weight:600; color:var(--text);
+      display:flex; align-items:center; gap:.5rem;
+    }
+    .info-card .ic-value i { color:var(--primary); font-size:1rem; }
+
+    /* section blocks */
+    .block { margin-bottom:2.8rem; }
+    .block h2 {
+      font-size:1.3rem; font-weight:700; color:var(--text);
+      margin-bottom:1rem; display:flex; align-items:center; gap:.6rem;
+    }
+    .block h2 i { color:var(--primary); font-size:1.1rem; }
+    .block p { color:var(--light); font-size:.95rem; line-height:1.85; }
+
+    /* features list */
+    .features { list-style:none; display:flex; flex-direction:column; gap:.65rem; }
+    .features li {
+      display:flex; align-items:flex-start; gap:.75rem;
+      color:var(--light); font-size:.93rem; line-height:1.7;
+    }
+    .features li i {
+      color:var(--primary); margin-top:.2rem; flex-shrink:0;
+    }
+
+    /* tech stack */
+    .tech-stack { display:flex; flex-wrap:wrap; gap:.6rem; }
+    .tech-badge {
+      display:inline-flex; align-items:center; gap:.35rem;
+      background:var(--section); color:var(--text);
+      padding:.35rem .9rem; border-radius:50px;
+      font-size:.82rem; font-weight:500;
+      border:1px solid rgba(0,0,0,.06);
+    }
+    .tech-badge i { color:var(--primary); }
+
+    /* progress */
+    .progress-wrap { margin-top:.8rem; }
+    .progress-bar-bg {
+      height:8px; background:#e5e7eb; border-radius:50px; overflow:hidden;
+    }
+    .progress-bar {
+      height:100%; background:linear-gradient(90deg,var(--primary),#60a5fa);
+      border-radius:50px; transition:width 1.2s ease;
+    }
+    .progress-label {
+      display:flex; justify-content:space-between;
+      font-size:.8rem; color:var(--light); margin-top:.4rem;
+    }
+
+    /* divider */
+    .divider { border:none; border-top:1px solid #e5e7eb; margin:2.5rem 0; }
+
+    /* CTA */
+    .cta-section { text-align:center; padding-top:1rem; }
+    .cta-section p { color:var(--light); font-size:.9rem; margin-bottom:1.5rem; }
+    .btn {
+      display:inline-flex; align-items:center; gap:.5rem;
+      padding:.7rem 1.8rem; border-radius:50px;
+      font-family:'Poppins',sans-serif; font-size:.92rem; font-weight:500;
+      cursor:pointer; border:2px solid transparent; transition:all .25s;
+    }
+    .btn-primary { background:var(--primary); color:#fff; border-color:var(--primary); }
+    .btn-primary:hover {
+      background:var(--secondary); border-color:var(--secondary);
+      transform:translateY(-2px); box-shadow:0 8px 20px rgba(37,99,235,.35);
+    }
+    .btn-outline { background:transparent; color:var(--primary); border-color:var(--primary); }
+    .btn-outline:hover {
+      background:var(--primary); color:#fff;
+      transform:translateY(-2px);
+    }
+    .cta-btns { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+
+    /* footer */
+    .footer {
+      background:var(--text); color:var(--light);
+      text-align:center; padding:1.5rem 2rem; font-size:.85rem;
+    }
+
+    /* responsive */
+    @media(max-width:600px){
+      .content{ padding:3rem 1.2rem 4rem; }
+      .info-grid{ grid-template-columns:1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="back-btn" id="backBtn">
+        <i class="fas fa-arrow-left"></i>
+        <span id="backLabel"></span>
+      </a>
+      <div class="lang-sw">
+        <button class="lbtn" data-lang="fr" onclick="setLang('fr')">FR</button>
+        <span>|</span>
+        <button class="lbtn" data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="project-icon-wrap" id="heroIcon">
+        <i id="heroIconEl" class="fas fa-code"></i>
+      </div>
+      <div class="status-badge">
+        <span class="dot"></span>
+        <span id="statusText"></span>
+      </div>
+      <h1 id="heroTitle">—</h1>
+      <p class="tagline" id="heroTagline"></p>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main class="content">
+
+    <!-- Info cards -->
+    <div class="info-grid" id="infoGrid">
+      <div class="info-card">
+        <span class="ic-label" id="lbl_category"></span>
+        <span class="ic-value"><i class="fas fa-tag"></i><span id="val_category"></span></span>
+      </div>
+      <div class="info-card">
+        <span class="ic-label" id="lbl_deploy"></span>
+        <span class="ic-value"><i class="fas fa-calendar-check"></i><span id="val_deploy"></span></span>
+      </div>
+      <div class="info-card">
+        <span class="ic-label" id="lbl_status"></span>
+        <span class="ic-value"><i class="fas fa-code-branch"></i><span id="val_status"></span></span>
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="block">
+      <h2><i class="fas fa-info-circle"></i><span id="sec_about"></span></h2>
+      <p id="desc"></p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Importance -->
+    <div class="block">
+      <h2><i class="fas fa-lightbulb"></i><span id="sec_importance"></span></h2>
+      <ul class="features" id="featuresList"></ul>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Tech stack -->
+    <div class="block">
+      <h2><i class="fas fa-layer-group"></i><span id="sec_tech"></span></h2>
+      <div class="tech-stack" id="techStack"></div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Progress -->
+    <div class="block">
+      <h2><i class="fas fa-tasks"></i><span id="sec_progress"></span></h2>
+      <div class="progress-wrap">
+        <div class="progress-bar-bg">
+          <div class="progress-bar" id="progressBar" style="width:0%"></div>
+        </div>
+        <div class="progress-label">
+          <span id="progressStart"></span>
+          <span id="progressPct"></span>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <p id="ctaText"></p>
+      <div class="cta-btns">
+        <a href="index.html" class="btn btn-primary">
+          <i class="fas fa-arrow-left"></i>
+          <span id="ctaBack"></span>
+        </a>
+        <a href="mailto:madoudiakayeteba@gmail.com" class="btn btn-outline">
+          <i class="fas fa-envelope"></i>
+          <span id="ctaContact"></span>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <span id="footerText"></span>
+  </footer>
+
+  <script>
+  /* ═══════════════════════════════════════════════════════
+     Project data (12 projects)
+  ═══════════════════════════════════════════════════════ */
+  const projects = {
+    1: {
+      icon: 'fas fa-school',
+      category: { fr:'Éducation / SaaS', en:'Education / SaaS' },
+      deploy:   { fr:'T3 2026', en:'Q3 2026' },
+      progress: 30,
+      title:    { fr:'Plateforme de Gestion Scolaire', en:'School Management Platform' },
+      tagline:  {
+        fr: 'Digitalisation complète des établissements scolaires au Mali — de la gestion des notes à la communication avec les parents.',
+        en: 'Complete digitalization of schools in Mali — from grade management to parent communication.'
+      },
+      desc: {
+        fr: "Ce projet vise à fournir une plateforme numérique complète pour le Lycée Fatoumata Siré Touré de Samaya et tout autre établissement partenaire. L'objectif est d'éliminer les contraintes du papier, de centraliser toutes les données scolaires et d'améliorer la communication entre enseignants, élèves et parents.",
+        en: "This project aims to provide a complete digital platform for Lycée Fatoumata Siré Touré de Samaya and any partner institution. The goal is to eliminate paper constraints, centralize all school data, and improve communication between teachers, students, and parents."
+      },
+      features: {
+        fr:[
+          "Gestion des notes et bulletins semestriels automatisés",
+          "Suivi des présences avec alertes parents en temps réel",
+          "Emplois du temps dynamiques et gestion des absences",
+          "Module de communication interne (messagerie enseignants/parents)",
+          "Tableau de bord analytique pour la direction",
+          "Accessible sur mobile pour les parents et enseignants"
+        ],
+        en:[
+          "Grade management and automated semester report cards",
+          "Attendance tracking with real-time parent alerts",
+          "Dynamic timetables and absence management",
+          "Internal communication module (teacher/parent messaging)",
+          "Analytics dashboard for school administration",
+          "Mobile-accessible for parents and teachers"
+        ]
+      },
+      stack: ['PHP','Laravel','Vue.js','MySQL','Tailwind CSS']
+    },
+    2: {
+      icon: 'fas fa-shopping-cart',
+      category: { fr:'E-commerce / SaaS', en:'E-commerce / SaaS' },
+      deploy:   { fr:'T2 2026', en:'Q2 2026' },
+      progress: 45,
+      title:    { fr:'ALLSHOP — E-commerce SaaS', en:'ALLSHOP — E-commerce SaaS' },
+      tagline:  {
+        fr: "Plateforme SaaS multi-vendeurs pour permettre aux familles et petites entreprises d'avoir leur boutique en ligne.",
+        en: "Multi-vendor SaaS platform enabling families and small businesses to launch their own online store."
+      },
+      desc: {
+        fr: "ALLSHOP est une solution SaaS de commerce électronique pensée pour les familles et micro-entrepreneurs. Chaque vendeur dispose de sa propre boutique personnalisée, d'un tableau de bord de gestion des commandes, de stocks et de paiements. Le projet est né d'un besoin familial concret et s'adresse à toute personne souhaitant vendre en ligne sans compétence technique.",
+        en: "ALLSHOP is a SaaS e-commerce solution designed for families and micro-entrepreneurs. Each seller gets their own customizable store with order, inventory, and payment management dashboards. Born from a concrete family need, it targets anyone wishing to sell online without technical knowledge."
+      },
+      features: {
+        fr:[
+          "Création de boutique en quelques minutes sans code",
+          "Gestion des produits, stocks et commandes",
+          "Intégration de paiements sécurisés (Orange Money, Wave, carte bancaire)",
+          "Tableau de bord vendeur avec statistiques de ventes",
+          "Système de livraison et suivi des colis",
+          "Application mobile pour gérer sa boutique en déplacement"
+        ],
+        en:[
+          "Store creation in minutes, no coding required",
+          "Product, inventory, and order management",
+          "Secure payment integration (Orange Money, Wave, bank card)",
+          "Seller dashboard with sales analytics",
+          "Delivery and parcel tracking system",
+          "Mobile app to manage your store on the go"
+        ]
+      },
+      stack: ['Vue.js','Node.js','Express','MySQL','Stripe API','Docker']
+    },
+    3: {
+      icon: 'fas fa-building',
+      category: { fr:'Immobilier / Mali', en:'Real Estate / Mali' },
+      deploy:   { fr:'T4 2026', en:'Q4 2026' },
+      progress: 20,
+      title:    { fr:'ImmoBko — Gestion Immobilière', en:'ImmoBko — Real Estate Mali' },
+      tagline:  {
+        fr: "La première plateforme dédiée à la gestion et à la recherche immobilière au Mali.",
+        en: "The first platform dedicated to real estate management and search in Mali."
+      },
+      desc: {
+        fr: "ImmoBko est une plateforme immobilière conçue spécifiquement pour le contexte malien. Elle permet aux propriétaires de publier leurs biens, aux locataires de rechercher des logements et aux agences de gérer leur portefeuille. Une carte interactive de Bamako et des filtres avancés facilitent la recherche.",
+        en: "ImmoBko is a real estate platform designed specifically for the Malian context. It allows owners to list properties, tenants to search for housing, and agencies to manage their portfolio. An interactive map of Bamako and advanced filters facilitate the search."
+      },
+      features: {
+        fr:[
+          "Annonces immobilières avec photos et visite virtuelle",
+          "Carte interactive de Bamako par quartier",
+          "Gestion locative : loyers, contrats, états des lieux",
+          "Portail propriétaire et portail locataire séparés",
+          "Système de messagerie sécurisée propriétaire/locataire",
+          "Statistiques du marché immobilier local"
+        ],
+        en:[
+          "Property listings with photos and virtual tour",
+          "Interactive map of Bamako by neighborhood",
+          "Rental management: rent, contracts, property inspections",
+          "Separate owner and tenant portals",
+          "Secure owner/tenant messaging system",
+          "Local real estate market statistics"
+        ]
+      },
+      stack: ['React','Django','Python','MySQL','Leaflet.js','REST API']
+    },
+    4: {
+      icon: 'fas fa-laptop',
+      category: { fr:'Site Vitrine', en:'Showcase Website' },
+      deploy:   { fr:'T1 2026', en:'Q1 2026' },
+      progress: 70,
+      title:    { fr:'DS Service — Site Vitrine', en:'DS Service — Website' },
+      tagline:  {
+        fr: "Présence web professionnelle pour les services informatiques DS Service.",
+        en: "Professional web presence for DS Service IT services."
+      },
+      desc: {
+        fr: "DS Service est une entreprise de services informatiques proposant maintenance, installation réseau et formation. Ce site vitrine moderne met en valeur l'expertise de l'équipe, les services proposés, les réalisations passées et facilite la prise de contact avec les clients potentiels.",
+        en: "DS Service is an IT services company offering maintenance, network installation, and training. This modern showcase website highlights the team's expertise, services offered, past achievements, and facilitates contact with potential clients."
+      },
+      features: {
+        fr:[
+          "Présentation des services : maintenance, réseau, formation",
+          "Galerie des réalisations avec témoignages clients",
+          "Formulaire de devis en ligne",
+          "Section actualités et conseils informatiques",
+          "Design moderne et responsive",
+          "Optimisation SEO pour la visibilité locale"
+        ],
+        en:[
+          "Service presentation: maintenance, network, training",
+          "Portfolio gallery with client testimonials",
+          "Online quote request form",
+          "News section with IT tips",
+          "Modern and responsive design",
+          "SEO optimization for local visibility"
+        ]
+      },
+      stack: ['HTML5','CSS3','JavaScript','Animate.css']
+    },
+    5: {
+      icon: 'fas fa-plane',
+      category: { fr:'Tourisme / Voyage', en:'Tourism / Travel' },
+      deploy:   { fr:'T2 2026', en:'Q2 2026' },
+      progress: 40,
+      title:    { fr:'Sakina Voyage — Agence de Voyage', en:'Sakina Voyage — Travel Agency' },
+      tagline:  {
+        fr: "Votre fenêtre sur le monde — réservez vos voyages avec Sakina Voyage.",
+        en: "Your window to the world — book your trips with Sakina Voyage."
+      },
+      desc: {
+        fr: "Sakina Voyage est l'agence de voyage de ma grande sœur. Ce site web dynamique permet de présenter les destinations proposées, d'obtenir des devis personnalisés et de gérer les réservations en ligne. L'objectif est de moderniser l'image de l'agence et d'élargir sa clientèle au-delà du bouche-à-oreille.",
+        en: "Sakina Voyage is my sister's travel agency. This dynamic website presents available destinations, enables personalized quotes, and manages online bookings. The goal is to modernize the agency's image and expand its clientele beyond word of mouth."
+      },
+      features: {
+        fr:[
+          "Catalogue de destinations avec galerie photos et détails",
+          "Moteur de recherche et filtre de voyages",
+          "Formulaire de devis personnalisé en ligne",
+          "Gestion des réservations et confirmation par email",
+          "Témoignages et avis des voyageurs",
+          "Blog conseils de voyage et inspirations"
+        ],
+        en:[
+          "Destination catalog with photo gallery and details",
+          "Travel search and filter engine",
+          "Online personalized quote form",
+          "Booking management with email confirmation",
+          "Traveler testimonials and reviews",
+          "Travel tips blog and inspirations"
+        ]
+      },
+      stack: ['React','CSS3','JavaScript','EmailJS','PHP']
+    },
+    6: {
+      icon: 'fas fa-pills',
+      category: { fr:'Santé / Pharma', en:'Health / Pharma' },
+      deploy:   { fr:'T3 2026', en:'Q3 2026' },
+      progress: 25,
+      title:    { fr:'PharmaShop — Gestion Pharmacie', en:'PharmaShop — Pharmacy App' },
+      tagline:  {
+        fr: "Solution complète de gestion pour pharmacies : stocks, ventes, ordonnances et reporting.",
+        en: "Complete management solution for pharmacies: inventory, sales, prescriptions, and reporting."
+      },
+      desc: {
+        fr: "PharmaShop est une application de gestion complète destinée aux pharmacies. Elle centralise la gestion des stocks de médicaments, le suivi des ventes, la gestion des ordonnances et génère des rapports détaillés pour le pharmacien. Une interface intuitive et des alertes automatiques de rupture de stock garantissent une gestion sereine.",
+        en: "PharmaShop is a complete management application for pharmacies. It centralizes drug inventory management, sales tracking, prescription management, and generates detailed reports for the pharmacist. An intuitive interface and automatic stock alert notifications ensure smooth management."
+      },
+      features: {
+        fr:[
+          "Gestion des stocks avec alertes de péremption et rupture",
+          "Point de vente (POS) rapide avec scan de codes-barres",
+          "Gestion des ordonnances et historique patients",
+          "Tableau de bord analytique des ventes par période",
+          "Gestion des fournisseurs et commandes automatiques",
+          "Export des rapports en PDF et Excel"
+        ],
+        en:[
+          "Inventory management with expiry and stock-out alerts",
+          "Fast point-of-sale (POS) with barcode scanning",
+          "Prescription management and patient history",
+          "Sales analytics dashboard by time period",
+          "Supplier management and automatic ordering",
+          "Report export in PDF and Excel"
+        ]
+      },
+      stack: ['PHP','Laravel','Vue.js','MySQL','Chart.js','REST API']
+    },
+    7: {
+      icon: 'fas fa-hard-hat',
+      category: { fr:'BTP / Site Vitrine', en:'Construction / Website' },
+      deploy:   { fr:'T1 2026', en:'Q1 2026' },
+      progress: 60,
+      title:    { fr:'BTP Tamba KOUYATE — Vitrine', en:'BTP Tamba KOUYATE — Website' },
+      tagline:  {
+        fr: "Mise en valeur du savoir-faire BTP de Tamba KOUYATE sur le web.",
+        en: "Showcasing Tamba KOUYATE's BTP expertise on the web."
+      },
+      desc: {
+        fr: "Site vitrine professionnel conçu pour Tamba KOUYATE, technicien BTP expérimenté. Ce site présente ses compétences, ses réalisations passées (construction, rénovation, aménagement), ses services et permet aux clients potentiels de le contacter facilement. Il vise à établir une présence digitale solide pour développer son activité.",
+        en: "Professional showcase website designed for Tamba KOUYATE, an experienced BTP technician. The site presents his skills, past achievements (construction, renovation, fitting), services, and enables potential clients to contact him easily. It aims to establish a solid digital presence to grow his business."
+      },
+      features: {
+        fr:[
+          "Présentation des services : construction, rénovation, plomberie",
+          "Galerie de réalisations avec photos avant/après",
+          "Section devis gratuit en ligne",
+          "Carte de localisation et zones d'intervention",
+          "Témoignages clients et certifications",
+          "Design professionnel adapté au secteur BTP"
+        ],
+        en:[
+          "Service presentation: construction, renovation, plumbing",
+          "Portfolio gallery with before/after photos",
+          "Free online quote section",
+          "Location map and service areas",
+          "Client testimonials and certifications",
+          "Professional design adapted to the construction sector"
+        ]
+      },
+      stack: ['HTML5','CSS3','JavaScript','PHP','Google Maps API']
+    },
+    8: {
+      icon: 'fas fa-tools',
+      category: { fr:'BTP / Site Vitrine', en:'Construction / Website' },
+      deploy:   { fr:'T2 2026', en:'Q2 2026' },
+      progress: 35,
+      title:    { fr:'BTP Abdoulaye KEITA — Vitrine', en:'BTP Abdoulaye KEITA — Website' },
+      tagline:  {
+        fr: "Présence digitale pour l'entreprise BTP privée d'Abdoulaye KEITA.",
+        en: "Digital presence for Abdoulaye KEITA's private BTP company."
+      },
+      desc: {
+        fr: "Site vitrine pour Abdoulaye KEITA, technicien BTP privé. Le site met en avant ses expertises dans le bâtiment et les travaux publics, ses références, ses partenaires et offre une prise de contact simplifiée. Un design sobre et professionnel renforce la crédibilité de son entreprise auprès de sa clientèle.",
+        en: "Showcase website for Abdoulaye KEITA, a private BTP technician. The site highlights his expertise in building and civil engineering, references, partners, and offers simplified contact. A clean, professional design reinforces his company's credibility with clients."
+      },
+      features: {
+        fr:[
+          "Présentation complète de l'entreprise et des compétences",
+          "Portefeuille de projets réalisés avec descriptions",
+          "Formulaire de contact et demande de devis",
+          "Section partenaires et certifications professionnelles",
+          "Blog actualités du secteur BTP",
+          "Optimisation mobile et SEO local"
+        ],
+        en:[
+          "Complete company and skills presentation",
+          "Portfolio of completed projects with descriptions",
+          "Contact form and quote request",
+          "Partners and professional certifications section",
+          "Construction industry news blog",
+          "Mobile optimization and local SEO"
+        ]
+      },
+      stack: ['HTML5','CSS3','JavaScript','PHP','EmailJS']
+    },
+    9: {
+      icon: 'fas fa-eye',
+      category: { fr:'IA / Sécurité', en:'AI / Security' },
+      deploy:   { fr:'T4 2026', en:'Q4 2026' },
+      progress: 15,
+      title:    { fr:'Détection de Vols par IA', en:'AI Theft Detection System' },
+      tagline:  {
+        fr: "Intelligence artificielle au service de la sécurité des supermarchés — détection en temps réel.",
+        en: "Artificial intelligence for supermarket security — real-time detection."
+      },
+      desc: {
+        fr: "Ce système intelligent utilise la vision par ordinateur et des algorithmes de deep learning pour détecter les comportements suspects et les vols en temps réel dans les supermarchés. Les caméras existantes sont exploitées pour identifier des patterns anormaux et alerter le personnel de sécurité immédiatement, réduisant ainsi les pertes.",
+        en: "This intelligent system uses computer vision and deep learning algorithms to detect suspicious behaviors and theft in real-time in supermarkets. Existing cameras are used to identify abnormal patterns and immediately alert security personnel, reducing losses."
+      },
+      features: {
+        fr:[
+          "Détection en temps réel via caméras existantes",
+          "Algorithmes de tracking des personnes et objets",
+          "Reconnaissance de comportements suspects (dissimulation, détournement)",
+          "Alertes instantanées sur interface web et mobile",
+          "Historique des incidents avec clips vidéo",
+          "Compatible avec les systèmes de caméras standards RTSP"
+        ],
+        en:[
+          "Real-time detection using existing cameras",
+          "Person and object tracking algorithms",
+          "Suspicious behavior recognition (concealment, diversion)",
+          "Instant alerts on web and mobile interface",
+          "Incident history with video clips",
+          "Compatible with standard RTSP camera systems"
+        ]
+      },
+      stack: ['Python','TensorFlow','OpenCV','Django','WebSocket','PostgreSQL']
+    },
+    10: {
+      icon: 'fas fa-leaf',
+      category: { fr:'IA / Agriculture', en:'AI / Agriculture' },
+      deploy:   { fr:'T3 2026', en:'Q3 2026' },
+      progress: 20,
+      title:    { fr:'Détection de Maladies des Plantes', en:'Plant Disease Detection' },
+      tagline:  {
+        fr: "L'IA au service des agriculteurs : photographiez une feuille, obtenez un diagnostic instantané.",
+        en: "AI for farmers: photograph a leaf, get an instant diagnosis."
+      },
+      desc: {
+        fr: "Cette application mobile et web permet aux agriculteurs de diagnostiquer les maladies de leurs plantes simplement en photographiant une feuille. Un modèle de deep learning entraîné sur des milliers d'images de plantes identifie la maladie et recommande un traitement adapté. Une solution accessible même sans connexion internet stable.",
+        en: "This mobile and web app allows farmers to diagnose plant diseases simply by photographing a leaf. A deep learning model trained on thousands of plant images identifies the disease and recommends appropriate treatment. A solution accessible even without stable internet connection."
+      },
+      features: {
+        fr:[
+          "Identification de maladies par photo de feuille en temps réel",
+          "Base de données de plus de 50 maladies de plantes courantes",
+          "Recommandations de traitement naturel et chimique",
+          "Mode hors-ligne pour les zones rurales sans connexion",
+          "Historique des diagnostics par parcelle",
+          "Interface simple adaptée aux agriculteurs non-techniciens"
+        ],
+        en:[
+          "Real-time leaf photo disease identification",
+          "Database of 50+ common plant diseases",
+          "Natural and chemical treatment recommendations",
+          "Offline mode for rural areas without connectivity",
+          "Diagnosis history by field/plot",
+          "Simple interface adapted for non-technical farmers"
+        ]
+      },
+      stack: ['Python','TensorFlow','Keras','Django','React Native','SQLite']
+    },
+    11: {
+      icon: 'fas fa-book-open',
+      category: { fr:'Éducation / Numérique', en:'Education / Digital' },
+      deploy:   { fr:'T2 2026', en:'Q2 2026' },
+      progress: 50,
+      title:    { fr:'Cahier de Texte Numérique', en:'Digital Textbook — Teacher Sign-in' },
+      tagline:  {
+        fr: "Fini les registres papier — émargement numérique, suivi automatisé, transparence totale.",
+        en: "No more paper registers — digital sign-in, automated tracking, full transparency."
+      },
+      desc: {
+        fr: "Cette application remplace les registres papier dans les établissements scolaires par un système d'émargement numérique. Les enseignants signent leur présence depuis leur smartphone, les cours dispensés sont enregistrés automatiquement, et la direction dispose d'un tableau de bord en temps réel pour suivre la progression pédagogique de chaque classe.",
+        en: "This application replaces paper registers in schools with a digital sign-in system. Teachers sign their attendance from their smartphone, courses taught are automatically recorded, and administrators have a real-time dashboard to monitor each class's educational progress."
+      },
+      features: {
+        fr:[
+          "Émargement numérique des enseignants via smartphone",
+          "Enregistrement automatique des cours et contenus dispensés",
+          "Tableau de bord directeur avec suivi en temps réel",
+          "Génération automatique des cahiers de texte par classe",
+          "Alertes sur les heures non effectuées",
+          "Export des rapports pour inspection académique"
+        ],
+        en:[
+          "Digital teacher sign-in via smartphone",
+          "Automatic recording of courses and content taught",
+          "Administrator dashboard with real-time monitoring",
+          "Automatic textbook generation per class",
+          "Alerts for unfulfilled teaching hours",
+          "Report export for academic inspection"
+        ]
+      },
+      stack: ['Vue.js','PHP','MySQL','PWA','Chart.js']
+    },
+    12: {
+      icon: 'fas fa-comments',
+      category: { fr:'Éducation / Gestion', en:'Education / Management' },
+      deploy:   { fr:'T2 2026', en:'Q2 2026' },
+      progress: 40,
+      title:    { fr:'Gestion des Réclamations Étudiants', en:'Student Complaint Management' },
+      tagline:  {
+        fr: "Plateforme centralisée et transparente pour le traitement des réclamations universitaires.",
+        en: "Centralized and transparent platform for handling university complaints."
+      },
+      desc: {
+        fr: "Cette plateforme permet aux étudiants de soumettre leurs réclamations (notes contestées, problèmes administratifs, réclamations pédagogiques) de manière formelle et traçable. Chaque réclamation est automatiquement routée vers le service compétent, l'étudiant suit son avancement en temps réel et reçoit des notifications à chaque étape du traitement.",
+        en: "This platform allows students to submit their complaints (contested grades, administrative issues, academic complaints) formally and traceably. Each complaint is automatically routed to the relevant department, the student tracks its progress in real-time and receives notifications at each processing step."
+      },
+      features: {
+        fr:[
+          "Soumission de réclamations catégorisées avec pièces jointes",
+          "Routage automatique vers le service compétent",
+          "Suivi en temps réel de l'avancement de la réclamation",
+          "Notifications email et SMS à chaque étape",
+          "Tableau de bord administrateur avec métriques de résolution",
+          "Historique complet et archivage des réclamations traitées"
+        ],
+        en:[
+          "Categorized complaint submission with attachments",
+          "Automatic routing to the relevant department",
+          "Real-time tracking of complaint progress",
+          "Email and SMS notifications at each step",
+          "Administrator dashboard with resolution metrics",
+          "Complete history and archive of processed complaints"
+        ]
+      },
+      stack: ['React','Django','Python','MySQL','Celery','Redis']
+    }
+  };
+
+  /* ═══════════════════════════════════════════════════════
+     UI Translations
+  ═══════════════════════════════════════════════════════ */
+  const ui = {
+    fr: {
+      back:         '← Retour au portfolio',
+      status:       'En développement',
+      lbl_category: 'Catégorie',
+      lbl_deploy:   'Mise en production',
+      lbl_status:   'Statut',
+      val_status:   'En cours de développement',
+      sec_about:    'À propos du projet',
+      sec_importance:'Points clés',
+      sec_tech:     'Stack technique',
+      sec_progress: 'Avancement',
+      prog_start:   'Démarrage',
+      cta_text:     'Vous souhaitez en savoir plus ou collaborer sur ce projet ?',
+      cta_back:     'Retour au portfolio',
+      cta_contact:  'Contacter Madou',
+      footer:       '© 2026 Madou Diakayeteba — Tous droits réservés.'
+    },
+    en: {
+      back:         '← Back to portfolio',
+      status:       'In Development',
+      lbl_category: 'Category',
+      lbl_deploy:   'Production Release',
+      lbl_status:   'Status',
+      val_status:   'Under active development',
+      sec_about:    'About the project',
+      sec_importance:'Key highlights',
+      sec_tech:     'Tech stack',
+      sec_progress: 'Progress',
+      prog_start:   'Started',
+      cta_text:     'Want to know more or collaborate on this project?',
+      cta_back:     'Back to portfolio',
+      cta_contact:  'Contact Madou',
+      footer:       '© 2026 Madou Diakayeteba — All rights reserved.'
+    }
+  };
+
+  const techIcons = {
+    'php':'fab fa-php','laravel':'fas fa-fire','vue.js':'fab fa-vuejs',
+    'mysql':'fas fa-database','node.js':'fab fa-node-js','express':'fas fa-server',
+    'stripe api':'fas fa-credit-card','docker':'fab fa-docker',
+    'react':'fab fa-react','django':'fas fa-server','python':'fab fa-python',
+    'leaflet.js':'fas fa-map-marked-alt','rest api':'fas fa-plug',
+    'html5':'fab fa-html5','css3':'fab fa-css3-alt','javascript':'fab fa-js',
+    'animate.css':'fas fa-magic','emailjs':'fas fa-envelope',
+    'google maps api':'fas fa-map','chart.js':'fas fa-chart-bar',
+    'tailwind css':'fab fa-css3','postgresql':'fas fa-database',
+    'websocket':'fas fa-wifi','tensorflow':'fas fa-brain',
+    'opencv':'fas fa-eye','keras':'fas fa-robot','react native':'fab fa-react',
+    'sqlite':'fas fa-database','pwa':'fas fa-mobile-alt',
+    'celery':'fas fa-cogs','redis':'fas fa-bolt'
+  };
+
+  function getIcon(tech){
+    return techIcons[tech.toLowerCase()] || 'fas fa-code';
+  }
+
+  /* ═══════════════════════════════════════════════════════
+     Core logic
+  ═══════════════════════════════════════════════════════ */
+  let lang = localStorage.getItem('portfolioLang') || 'fr';
+  const params = new URLSearchParams(window.location.search);
+  const id = parseInt(params.get('id')) || 1;
+  const proj = projects[id] || projects[1];
+
+  function render() {
+    const t = ui[lang];
+    const p = proj;
+
+    // lang buttons
+    document.querySelectorAll('.lbtn').forEach(b =>
+      b.classList.toggle('active', b.dataset.lang === lang)
+    );
+
+    // nav
+    document.getElementById('backLabel').textContent = t.back;
+    document.title = p.title[lang] + ' — Madou Diakayeteba';
+
+    // hero
+    document.getElementById('heroIconEl').className = p.icon;
+    document.getElementById('statusText').textContent = t.status;
+    document.getElementById('heroTitle').textContent = p.title[lang];
+    document.getElementById('heroTagline').textContent = p.tagline[lang];
+
+    // info cards
+    document.getElementById('lbl_category').textContent = t.lbl_category;
+    document.getElementById('val_category').textContent = p.category[lang];
+    document.getElementById('lbl_deploy').textContent = t.lbl_deploy;
+    document.getElementById('val_deploy').textContent = p.deploy[lang];
+    document.getElementById('lbl_status').textContent = t.lbl_status;
+    document.getElementById('val_status').textContent = t.val_status;
+
+    // sections
+    document.getElementById('sec_about').textContent = ' ' + t.sec_about;
+    document.getElementById('desc').textContent = p.desc[lang];
+    document.getElementById('sec_importance').textContent = ' ' + t.sec_importance;
+
+    const fl = document.getElementById('featuresList');
+    fl.innerHTML = '';
+    p.features[lang].forEach(f => {
+      const li = document.createElement('li');
+      li.innerHTML = `<i class="fas fa-check-circle"></i><span>${f}</span>`;
+      fl.appendChild(li);
+    });
+
+    document.getElementById('sec_tech').textContent = ' ' + t.sec_tech;
+    const ts = document.getElementById('techStack');
+    ts.innerHTML = '';
+    p.stack.forEach(tech => {
+      const badge = document.createElement('span');
+      badge.className = 'tech-badge';
+      badge.innerHTML = `<i class="${getIcon(tech)}"></i>${tech}`;
+      ts.appendChild(badge);
+    });
+
+    document.getElementById('sec_progress').textContent = ' ' + t.sec_progress;
+    document.getElementById('progressStart').textContent = t.prog_start;
+    document.getElementById('progressPct').textContent = p.progress + '%';
+    setTimeout(() => {
+      document.getElementById('progressBar').style.width = p.progress + '%';
+    }, 300);
+
+    // cta
+    document.getElementById('ctaText').textContent = t.cta_text;
+    document.getElementById('ctaBack').textContent = t.cta_back;
+    document.getElementById('ctaContact').textContent = t.cta_contact;
+
+    // footer
+    document.getElementById('footerText').textContent = t.footer;
+  }
+
+  function setLang(l) {
+    lang = l;
+    localStorage.setItem('portfolioLang', l);
+    render();
+  }
+
+  render();
+  </script>
+</body>
+</html>
