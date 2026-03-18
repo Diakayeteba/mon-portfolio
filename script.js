@@ -90,7 +90,7 @@ const translations = {
           desc:  'Professional showcase website for DS Service, presenting IT services, past achievements, and contact details.',
           link:  'View Project',
           tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'coming-soon.html?id=4',
+          url:   'https://diak-service.vercel.app/',
           image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
           icon:  'fas fa-laptop'
         },
@@ -126,7 +126,7 @@ const translations = {
           desc:  "Professional showcase website for Abdoulaye KEITA's private BTP company: services, references, and contact.",
           link:  'View Project',
           tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'coming-soon.html?id=8',
+          url:   'https://debloque-btp.vercel.app/',
           image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80',
           icon:  'fas fa-tools'
         },
@@ -303,7 +303,7 @@ const translations = {
           desc:  "Site vitrine professionnel pour DS Service : présentation des services informatiques, réalisations et coordonnées de contact.",
           link:  'Voir le Projet',
           tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'coming-soon.html?id=4',
+          url:   'https://diak-service.vercel.app/',
           image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
           icon:  'fas fa-laptop'
         },
@@ -339,7 +339,7 @@ const translations = {
           desc:  "Site vitrine professionnel pour l'entreprise BTP d'Abdoulaye KEITA : services, références et informations de contact.",
           link:  'Voir le Projet',
           tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'coming-soon.html?id=8',
+          url:   'https://debloque-btp.vercel.app/',
           image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80',
           icon:  'fas fa-tools'
         },
