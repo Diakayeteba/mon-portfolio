@@ -58,6 +58,43 @@ const translations = {
     projects: {
       title: 'Projects',
       items: [
+        /* Live projects first — easy access for recruiters */
+        {
+          title: 'GELGEC BTP — Website',
+          desc:  "Professional showcase website for Christian Njankeu's GELGEC BTP company: services, references, and contact information.",
+          link:  'View Project',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://gelgecbtp.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+          icon:  'fas fa-hard-hat'
+        },
+        {
+          title: 'BTP Abdoulaye KEITA — Website (DÉBLOQUÉ BTP)',
+          desc:  "Professional showcase website for Abdoulaye KEITA's private BTP company: services, references, and contact.",
+          link:  'View Project',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://debloque-btp.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80',
+          icon:  'fas fa-tools'
+        },
+        {
+          title: 'DS Service — Website (DIAK-SERVICE)',
+          desc:  'Professional showcase website for DS Service, presenting IT services, past achievements, and contact details.',
+          link:  'View Project',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://diak-service.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
+          icon:  'fas fa-laptop'
+        },
+        {
+          title: 'Student Complaint Management',
+          desc:  'Centralized platform allowing students to submit, track, and resolve complaints with full transparency and automated routing.',
+          link:  'View Project',
+          tags:  ['React', 'Django', 'Python', 'MySQL'],
+          url:   'https://grstiondesreclamations.web.app/',
+          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
+          icon:  'fas fa-comments'
+        },
         {
           title: 'School Management Platform',
           desc:  'Complete digital management platform for Lycée Fatoumata Siré Touré de Samaya and partner schools: attendance, grades, timetables, and parent-teacher communication.',
@@ -84,15 +121,6 @@ const translations = {
           url:   'coming-soon.html?id=3',
           image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80',
           icon:  'fas fa-building'
-        },
-        {
-          title: 'DS Service — Website',
-          desc:  'Professional showcase website for DS Service, presenting IT services, past achievements, and contact details.',
-          link:  'View Project',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://diak-service.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
-          icon:  'fas fa-laptop'
         },
         {
           title: 'Sakina Voyage — Travel Agency',
@@ -122,15 +150,6 @@ const translations = {
           icon:  'fas fa-hard-hat'
         },
         {
-          title: 'BTP Abdoulaye KEITA — Website',
-          desc:  "Professional showcase website for Abdoulaye KEITA's private BTP company: services, references, and contact.",
-          link:  'View Project',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://debloque-btp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80',
-          icon:  'fas fa-tools'
-        },
-        {
           title: 'AI Theft Detection — Supermarkets',
           desc:  'Real-time AI-powered theft detection system for supermarkets using computer vision and behavioral pattern analysis.',
           link:  'View Project',
@@ -156,24 +175,6 @@ const translations = {
           url:   'coming-soon.html?id=11',
           image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80',
           icon:  'fas fa-book-open'
-        },
-        {
-          title: 'Student Complaint Management',
-          desc:  'Centralized platform allowing students to submit, track, and resolve complaints with full transparency and automated routing.',
-          link:  'View Project',
-          tags:  ['React', 'Django', 'Python', 'MySQL'],
-          url:   'https://grstiondesreclamations.web.app/',
-          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
-          icon:  'fas fa-comments'
-        },
-        {
-          title: 'GELGEC BTP — Website',
-          desc:  "Professional showcase website for Christian Njankeu's GELGEC BTP company: services, references, and contact information.",
-          link:  'View Project',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://gelgecbtp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-          icon:  'fas fa-hard-hat'
         }
       ]
     },
@@ -280,6 +281,43 @@ const translations = {
     projects: {
       title: 'Projets',
       items: [
+        /* Projets en ligne en premier — visibilité pour les recruteurs */
+        {
+          title: 'GELGEC BTP — Vitrine',
+          desc:  "Site vitrine professionnel pour l'entreprise BTP de Christian Njankeu : services, références et informations de contact.",
+          link:  'Voir le Projet',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://gelgecbtp.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+          icon:  'fas fa-hard-hat'
+        },
+        {
+          title: 'Site web BTP Abdoulaye KEITA — DÉBLOQUÉ BTP',
+          desc:  "Site vitrine professionnel pour l'entreprise BTP d'Abdoulaye KEITA : services, références et informations de contact.",
+          link:  'Voir le Projet',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://debloque-btp.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80',
+          icon:  'fas fa-tools'
+        },
+        {
+          title: 'DS Service — Site Vitrine (DIAK-SERVICE)',
+          desc:  "Site vitrine professionnel pour DS Service : présentation des services informatiques, réalisations et coordonnées de contact.",
+          link:  'Voir le Projet',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://diak-service.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
+          icon:  'fas fa-laptop'
+        },
+        {
+          title: 'Gestion des Réclamations Étudiants',
+          desc:  "Plateforme centralisée permettant aux étudiants de soumettre, suivre et résoudre leurs réclamations avec transparence et routage automatisé.",
+          link:  'Voir le Projet',
+          tags:  ['React', 'Django', 'Python', 'MySQL'],
+          url:   'https://grstiondesreclamations.web.app/',
+          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
+          icon:  'fas fa-comments'
+        },
         {
           title: 'Plateforme de Gestion Scolaire',
           desc:  "Plateforme de gestion complète pour le Lycée Fatoumata Siré Touré de Samaya et tout établissement partenaire : présences, notes, emplois du temps et communication parents-enseignants.",
@@ -306,15 +344,6 @@ const translations = {
           url:   'coming-soon.html?id=3',
           image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80',
           icon:  'fas fa-building'
-        },
-        {
-          title: 'DS Service — Site Vitrine',
-          desc:  "Site vitrine professionnel pour DS Service : présentation des services informatiques, réalisations et coordonnées de contact.",
-          link:  'Voir le Projet',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://diak-service.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
-          icon:  'fas fa-laptop'
         },
         {
           title: 'Sakina Voyage — Agence de Voyage',
@@ -344,15 +373,6 @@ const translations = {
           icon:  'fas fa-hard-hat'
         },
         {
-          title: 'Site web BTP Abdoulaye KEITA — Vitrine (DEBLOQUE-BTP)',
-          desc:  "Site vitrine professionnel pour l'entreprise BTP d'Abdoulaye KEITA : services, références et informations de contact.",
-          link:  'Voir le Projet',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://debloque-btp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80',
-          icon:  'fas fa-tools'
-        },
-        {
           title: 'Système de détection de Vols par IA',
           desc:  "Système de détection de vols en temps réel dans les supermarchés, basé sur la vision par ordinateur et l'analyse comportementale.",
           link:  'Voir le Projet',
@@ -378,24 +398,6 @@ const translations = {
           url:   'coming-soon.html?id=11',
           image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80',
           icon:  'fas fa-book-open'
-        },
-        {
-          title: 'Gestion des Réclamations Étudiants',
-          desc:  "Plateforme centralisée permettant aux étudiants de soumettre, suivre et résoudre leurs réclamations avec transparence et routage automatisé.",
-          link:  'Voir le Projet',
-          tags:  ['React', 'Django', 'Python', 'MySQL'],
-          url:   'https://grstiondesreclamations.web.app/',
-          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
-          icon:  'fas fa-comments'
-        },
-        {
-          title: 'GELGEC BTP — Vitrine',
-          desc:  "Site vitrine professionnel pour l'entreprise BTP de Christian Njankeu : services, références et informations de contact.",
-          link:  'Voir le Projet',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://gelgecbtp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-          icon:  'fas fa-hard-hat'
         }
       ]
     },
