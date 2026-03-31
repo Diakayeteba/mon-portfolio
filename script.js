@@ -317,7 +317,7 @@ const translations = {
           icon:  'fas fa-plane'
         },
         {
-          title: 'PharmaShop — Gestion Pharmacie',
+          title: 'PharmaShop — Gestion Pharmacie (PHARMASHOP)',
           desc:  "Application complète de gestion de pharmacie : stocks, ventes, ordonnances et tableau de bord de reporting en temps réel.",
           link:  'Voir le Projet',
           tags:  ['PHP', 'Laravel', 'Vue.js', 'MySQL'],
@@ -326,7 +326,7 @@ const translations = {
           icon:  'fas fa-pills'
         },
         {
-          title: 'BTP Tamba KOUYATE — Vitrine',
+          title: 'Site web BTP Tamba KOUYATE — Vitrine',
           desc:  "Site vitrine professionnel pour l'entreprise BTP de Tamba KOUYATE : présentation des services, galerie de projets et contact.",
           link:  'Voir le Projet',
           tags:  ['HTML5', 'CSS3', 'JavaScript'],
@@ -335,7 +335,7 @@ const translations = {
           icon:  'fas fa-hard-hat'
         },
         {
-          title: 'BTP Abdoulaye KEITA — Vitrine',
+          title: 'Site web BTP Abdoulaye KEITA — Vitrine (DEBLOQUE-BTP)',
           desc:  "Site vitrine professionnel pour l'entreprise BTP d'Abdoulaye KEITA : services, références et informations de contact.",
           link:  'Voir le Projet',
           tags:  ['HTML5', 'CSS3', 'JavaScript'],
@@ -344,7 +344,7 @@ const translations = {
           icon:  'fas fa-tools'
         },
         {
-          title: 'Détection de Vols par IA',
+          title: 'Système de détection de Vols par IA',
           desc:  "Système de détection de vols en temps réel dans les supermarchés, basé sur la vision par ordinateur et l'analyse comportementale.",
           link:  'Voir le Projet',
           tags:  ['Python', 'TensorFlow', 'OpenCV', 'IA'],
@@ -353,7 +353,7 @@ const translations = {
           icon:  'fas fa-eye'
         },
         {
-          title: 'Détection de Maladies des Plantes',
+          title: 'Plateforme de détection de Maladies des Plantes',
           desc:  "Système IA de diagnostic des maladies des plantes par analyse photo de feuilles — aide les agriculteurs avec des recommandations de traitement.",
           link:  'Voir le Projet',
           tags:  ['Python', 'TensorFlow', 'Django', 'IA'],
@@ -375,10 +375,19 @@ const translations = {
           desc:  "Plateforme centralisée permettant aux étudiants de soumettre, suivre et résoudre leurs réclamations avec transparence et routage automatisé.",
           link:  'Voir le Projet',
           tags:  ['React', 'Django', 'Python', 'MySQL'],
-          url:   'coming-soon.html?id=12',
+          url:   'https://grstiondesreclamations.web.app/',
           image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
           icon:  'fas fa-comments'
         }
+        {
+        title: 'GELGEC BTP',
+          desc:  "Site vitrine professionnel pour l'entreprise BTP de Christian Njankeu : services, références et informations de contact.",
+          link:  'Voir le Projet',
+          tags:  ['React', 'Django', 'Python', 'MySQL'],
+          url:   'https://gelgecbtp.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
+          icon:  'fas fa-comments'
+        },
       ]
     },
     stack: {
