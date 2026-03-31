@@ -162,9 +162,18 @@ const translations = {
           desc:  'Centralized platform allowing students to submit, track, and resolve complaints with full transparency and automated routing.',
           link:  'View Project',
           tags:  ['React', 'Django', 'Python', 'MySQL'],
-          url:   'coming-soon.html?id=12',
+          url:   'https://grstiondesreclamations.web.app/',
           image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
           icon:  'fas fa-comments'
+        },
+        {
+          title: 'GELGEC BTP — Website',
+          desc:  "Professional showcase website for Christian Njankeu's GELGEC BTP company: services, references, and contact information.",
+          link:  'View Project',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://gelgecbtp.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+          icon:  'fas fa-hard-hat'
         }
       ]
     },
@@ -378,16 +387,16 @@ const translations = {
           url:   'https://grstiondesreclamations.web.app/',
           image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
           icon:  'fas fa-comments'
-        }
+        },
         {
-        title: 'GELGEC BTP',
+          title: 'GELGEC BTP — Vitrine',
           desc:  "Site vitrine professionnel pour l'entreprise BTP de Christian Njankeu : services, références et informations de contact.",
           link:  'Voir le Projet',
-          tags:  ['React', 'Django', 'Python', 'MySQL'],
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
           url:   'https://gelgecbtp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
-          icon:  'fas fa-comments'
-        },
+          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+          icon:  'fas fa-hard-hat'
+        }
       ]
     },
     stack: {
@@ -553,7 +562,8 @@ function startTypingAnimation() {
   if (!el) return;
 
   const animId = ++typingAnimationId;
-  const text   = translations[currentLang].hero.greeting;
+  const text   = translations[currentLang]?.hero?.greeting ?? '';
+  if (!text) return;
   let i = 0;
 
   el.innerHTML = '<span class="cursor"></span>';
@@ -651,7 +661,8 @@ function renderTimeline() {
   if (!container) return;
   container.innerHTML = '';
 
-  const items = translations[currentLang].experience.items;
+  const items = translations[currentLang]?.experience?.items ?? [];
+  if (!items.length) return;
 
   items.forEach((item, idx) => {
     const div = document.createElement('div');
@@ -684,14 +695,16 @@ function renderProjects() {
   if (!container) return;
   container.innerHTML = '';
 
-  const items = translations[currentLang].projects.items;
+  const items = translations[currentLang]?.projects?.items ?? [];
+  if (!items.length) return;
 
   items.forEach((item, idx) => {
     const card = document.createElement('div');
     card.className = 'project-card fade-up';
     card.style.transitionDelay = `${idx * 0.1}s`;
 
-    const tagsHTML = item.tags.map(tag =>
+    const tags = Array.isArray(item.tags) ? item.tags : [];
+    const tagsHTML = tags.map(tag =>
       `<span class="project-tag"><i class="${getTagIcon(tag)}" style="color:${getTagColor(tag)}"></i> ${tag}</span>`
     ).join('');
 
@@ -726,7 +739,9 @@ function renderStack() {
   if (!container) return;
   container.innerHTML = '';
 
-  const categories = translations[currentLang].stack.categories;
+  const categories = translations[currentLang]?.stack?.categories ?? [];
+  if (!categories.length) return;
+
   const wrap = document.createElement('div');
   wrap.className = 'stack-categories';
 
@@ -759,6 +774,7 @@ function renderStack() {
    ============================================================ */
 function initNavbarScroll() {
   const navbar = document.getElementById('navbar');
+  if (!navbar) return;
   window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 50);
   }, { passive: true });
