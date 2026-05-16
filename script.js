@@ -96,6 +96,24 @@ const translations = {
           icon:  'fas fa-comments'
         },
         {
+          title: 'BTP Tamba KOUYATE — Website (KOUYATE-BTP)',
+          desc:  "Professional showcase website for Tamba KOUYATE's BTP company: technical design, site supervision, services, and project portfolio in Bamako.",
+          link:  'View Project',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://kouyate-btp.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+          icon:  'fas fa-hard-hat'
+        },
+        {
+          title: 'IVO Coiffure — Hair Salon Website',
+          desc:  'Modern showcase website for IVO COIFFURE N°1 in Bamako: services, gallery, online booking, and contact for hair, beard, and beauty care.',
+          link:  'View Project',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://ivo-coiffure.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80',
+          icon:  'fas fa-cut'
+        },
+        {
           title: 'School Management Platform',
           desc:  'Complete digital management platform for Lycée Fatoumata Siré Touré de Samaya and partner schools: attendance, grades, timetables, and parent-teacher communication.',
           link:  'View Project',
@@ -139,15 +157,6 @@ const translations = {
           url:   'coming-soon.html?id=6',
           image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80',
           icon:  'fas fa-pills'
-        },
-        {
-          title: 'BTP Tamba KOUYATE — Website',
-          desc:  "Professional showcase website for Tamba KOUYATE's private BTP company: services, project gallery, and contact.",
-          link:  'View Project',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'coming-soon.html?id=7',
-          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-          icon:  'fas fa-hard-hat'
         },
         {
           title: 'AI Theft Detection — Supermarkets',
@@ -319,6 +328,24 @@ const translations = {
           icon:  'fas fa-comments'
         },
         {
+          title: 'Site web BTP Tamba KOUYATE — Vitrine (KOUYATE-BTP)',
+          desc:  "Site vitrine pour KOUYATE-BTP : conception technique, supervision de chantiers, services, réalisations et contact à Bamako.",
+          link:  'Voir le Projet',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://kouyate-btp.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+          icon:  'fas fa-hard-hat'
+        },
+        {
+          title: 'Salon de coiffure — Ivo Coiffure',
+          desc:  "Site vitrine moderne pour IVO COIFFURE N°1 à Bamako : services, galerie, réservation et contact pour coiffure, barbe et soins beauté.",
+          link:  'Voir le Projet',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://ivo-coiffure.vercel.app/',
+          image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80',
+          icon:  'fas fa-cut'
+        },
+        {
           title: 'Plateforme de Gestion Scolaire',
           desc:  "Plateforme de gestion complète pour le Lycée Fatoumata Siré Touré de Samaya et tout établissement partenaire : présences, notes, emplois du temps et communication parents-enseignants.",
           link:  'Voir le Projet',
@@ -362,15 +389,6 @@ const translations = {
           url:   'coming-soon.html?id=6',
           image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80',
           icon:  'fas fa-pills'
-        },
-        {
-          title: 'Site web BTP Tamba KOUYATE — Vitrine',
-          desc:  "Site vitrine professionnel pour l'entreprise BTP de Tamba KOUYATE : présentation des services, galerie de projets et contact.",
-          link:  'Voir le Projet',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'coming-soon.html?id=7',
-          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-          icon:  'fas fa-hard-hat'
         },
         {
           title: 'Système de détection de Vols par IA',
