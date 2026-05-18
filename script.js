@@ -328,7 +328,7 @@ const translations = {
           icon:  'fas fa-comments'
         },
         {
-          title: 'Site web BTP Tamba KOUYATE — Vitrine (KOUYATE-BTP)',
+          title: 'KOUYATE-BTP — SiteVitrine (KOUYATE-BTP)',
           desc:  "Site vitrine pour KOUYATE-BTP : conception technique, supervision de chantiers, services, réalisations et contact à Bamako.",
           link:  'Voir le Projet',
           tags:  ['HTML5', 'CSS3', 'JavaScript'],
