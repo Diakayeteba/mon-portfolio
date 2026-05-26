@@ -327,7 +327,7 @@ const translations = {
           image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
           icon:  'fas fa-comments'
         },
-        // KOUYATE-BTP en 5e position pour donner de la visibilité à ce projet clé, même s'il est en ligne depuis peu — c'est un projet important pour moi et je veux m'assurer qu'il est vu par les recruteurs qui visitent la section projets avant de scroller vers les projets à venir.
+        // KOUYATE-BTP en 4e position pour donner de la visibilité à ce projet clé, même s'il est en ligne depuis peu — c'est un projet important pour moi et je veux m'assurer qu'il est vu par les recruteurs qui visitent la section projets avant de scroller vers les projets à venir.
         {
           title: 'KOUYATE-BTP — SiteVitrine (KOUYATE-BTP)',
           desc:  "Site vitrine pour KOUYATE-BTP : conception technique, supervision de chantiers, services, réalisations et contact à Bamako.",
@@ -337,6 +337,8 @@ const translations = {
           image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
           icon:  'fas fa-hard-hat'
         },
+
+        // IVO COIFFURE en 5e position pour donner de la visibilité à ce projet clé, même s'il est en ligne depuis peu — c'est un projet important pour moi et je veux m'assurer qu'il est vu par les recruteurs qui visitent la section projets avant de scroller vers les projets à venir.
         {
           title: 'Salon de coiffure — Ivo Coiffure',
           desc:  "Site vitrine moderne pour IVO COIFFURE N°1 à Bamako : services, galerie, réservation et contact pour coiffure, barbe et soins beauté.",
