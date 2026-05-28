@@ -413,7 +413,7 @@ const translations = {
           title: 'Cahier de Texte Numérique',
           desc:  "Application d'émargement numérique remplaçant les registres papier : les enseignants signent électroniquement, le suivi est automatisé et transparent.",
           link:  'Voir le Projet',
-          tags:  ['Vue.js', 'PHP', 'MySQL'],
+          tags:  ['Vue.js', 'PHP','Laravel','MySQL'],
           url:   'coming-soon.html?id=11',
           image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80',
           icon:  'fas fa-book-open'
