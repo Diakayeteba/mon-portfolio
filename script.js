@@ -252,7 +252,7 @@ const translations = {
     about: {
       title: 'À Propos',
       p1: "Actuellement en Master 1 Intelligence Artificielle à l'ESIIA, je recherche une alternance pour mettre mon expertise technique au service de vos projets en tant que Développeur IA ou Architecte des SI.",
-      p2: 'Passionné par les technologies numériques, l\'entrepreneuriat et les arts martiaux (Karaté Shotokan, Kickboxing), je combine rigueur technique et créativité pour concevoir des solutions robustes et scalables.'
+      p2: 'Passionné par les technologies numériques, Cofondateur du Startup AnWKa IT Solutions, je combine rigueur technique et créativité pour concevoir des solutions robustes et scalables.'
     },
     experience: {
       title: 'Expérience',
@@ -450,7 +450,7 @@ const translations = {
             { name: 'GitHub',  icon: 'fab fa-github',  color: '#181717' },
             { name: 'AWS',     icon: 'fab fa-aws',     color: '#ff9900' },
             { name: 'Linux',   icon: 'fab fa-linux',   color: '#fcc624' },
-            { name: 'API REST',icon: 'fas fa-plug',    color: '#2563eb' }
+            { name: 'API REST',icon: 'fas fa-plug',    color: '#0d43b8' }
           ]
         }
       ]
