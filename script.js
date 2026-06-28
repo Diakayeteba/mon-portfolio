@@ -96,12 +96,12 @@ const translations = {
           icon:  'fas fa-comments'
         },
         {
-          title: 'BTP Tamba KOUYATE — Website (KOUYATE-BTP)',
+          title: 'BTP TAMBA KOUYATE — Website (KOUYATE-BTP)',
           desc:  "Professional showcase website for Tamba KOUYATE's BTP company: technical design, site supervision, services, and project portfolio in Bamako.",
           link:  'View Project',
           tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://kouyate-btp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+          url:   '',
+          image: '',
           icon:  'fas fa-hard-hat'
         },
         {
