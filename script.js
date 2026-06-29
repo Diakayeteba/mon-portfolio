@@ -424,7 +424,7 @@ const translations = {
           link:  'Voir le Projet',
           tags:  ['Vue.js', 'PYTHON','DJANGO','MySQL'],
           url:   'http://madou223.pythonanywhere.com/',
-          image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80',
+          image: 'https://public-files.gumroad.com/variants/tct7wl5dfwb13m2fvyte6q9hsfow/3298c3eb001bbed90f1d616da66708480096a0a1b6e81bd4f8a2d6e9b831d301',
           icon:  'fas fa-book-open'
         }
       ]
