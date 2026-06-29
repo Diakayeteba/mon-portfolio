@@ -417,6 +417,15 @@ const translations = {
           url:   'coming-soon.html?id=11',
           image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80',
           icon:  'fas fa-book-open'
+        },
+        {
+          title: 'ALLSHOP FACTURATION',
+          desc:  "Application de gestion des ventes pour les les commerçants ",
+          link:  'Voir le Projet',
+          tags:  ['Vue.js', 'PYTHON','DJANGO','MySQL'],
+          url:   'http://madou223.pythonanywhere.com/',
+          image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80',
+          icon:  'fas fa-book-open'
         }
       ]
     },
