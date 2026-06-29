@@ -420,7 +420,7 @@ const translations = {
         },
         {
           title: 'ALLSHOP FACTURATION',
-          desc:  "Application de gestion des ventes pour les les commerçants ",
+          desc:  "Application de gestion des ventes pour les commerçants ",
           link:  'Voir le Projet',
           tags:  ['Vue.js', 'PYTHON','DJANGO','MySQL'],
           url:   'http://madou223.pythonanywhere.com/',
