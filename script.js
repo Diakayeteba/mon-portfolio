@@ -440,7 +440,7 @@ const translations = {
 
         {
           title: 'missira-imprim',
-          desc:  'Modern showcase website for Missira Imprim in Bamako: presentation of printing services, custom textile and promotional goodies, project gallery, quote requests, and contact information for professional printing solutions.',
+          desc:  'Site vitrine moderne pour Missira Imprim à Bamako : présentation des services d \ impression, textile personnalisé et goodies promotionnels, galerie de projets, demandes de devis et informations de contact pour des solutions d\ impression professionnelles.',
           link:  'View Project',
           tags:  ['HTML5', 'CSS3', 'JavaScript'],
           url:   'https://missira-imprim-site--madoudiakayeteb.replit.app/',
