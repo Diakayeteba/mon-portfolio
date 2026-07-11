@@ -436,7 +436,17 @@ const translations = {
           url:   'http://madou223.pythonanywhere.com/',
           image: 'https://public-files.gumroad.com/variants/tct7wl5dfwb13m2fvyte6q9hsfow/3298c3eb001bbed90f1d616da66708480096a0a1b6e81bd4f8a2d6e9b831d301',
           icon:  'fas fa-book-open'
-        }
+        },
+
+        {
+          title: 'missira-imprim',
+          desc:  'Modern showcase website for Missira Imprim in Bamako: presentation of printing services, custom textile and promotional goodies, project gallery, quote requests, and contact information for professional printing solutions.',
+          link:  'View Project',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://missira-imprim-site--madoudiakayeteb.replit.app/',
+          image: 'https://imprimeriedumaroc.com/wp-content/uploads/2022/12/maxresdefault.jpg',
+          icon:  'fas fa-cut'
+        },
       ]
     },
     stack: {
