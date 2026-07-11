@@ -114,6 +114,16 @@ const translations = {
           icon:  'fas fa-cut'
         },
         {
+          title: 'missira-imprim',
+          desc:  'Modern showcase website for Missira Imprim in Bamako: presentation of printing services, custom textile and promotional goodies, project gallery, quote requests, and contact information for professional printing solutions.',
+          link:  'View Project',
+          tags:  ['HTML5', 'CSS3', 'JavaScript'],
+          url:   'https://missira-imprim-site--madoudiakayeteb.replit.app/',
+          image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80',
+          icon:  'fas fa-cut'
+        },
+
+        {
           title: 'School Management Platform',
           desc:  'Complete digital management platform for Lycée Fatoumata Siré Touré de Samaya and partner schools: attendance, grades, timetables, and parent-teacher communication.',
           link:  'View Project',
