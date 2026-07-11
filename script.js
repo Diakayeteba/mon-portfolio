@@ -119,7 +119,7 @@ const translations = {
           link:  'View Project',
           tags:  ['HTML5', 'CSS3', 'JavaScript'],
           url:   'https://missira-imprim-site--madoudiakayeteb.replit.app/',
-          image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80',
+          image: 'https://imprimeriedumaroc.com/wp-content/uploads/2022/12/maxresdefault.jpg',
           icon:  'fas fa-cut'
         },
 
