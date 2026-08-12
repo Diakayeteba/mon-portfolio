@@ -4,496 +4,531 @@
 const translations = {
   en: {
     nav: {
-      about:      'About',
-      experience: 'Experience',
-      projects:   'Projects',
-      stack:      'Stack',
-      contact:    'Contact'
+      about: "About",
+      experience: "Experience",
+      projects: "Projects",
+      stack: "Stack",
+      contact: "Contact",
     },
     hero: {
-      greeting:    "Hi, I'm Madou Diakayeteba",
-      title:       'Full-Stack Developer & AI Master Student',
-      location:    'Sarcelles, France',
-      cta_contact: 'Contact Me',
-      cta_work:    'View My Work'
+      greeting: "Hi, I'm Madou Diakayeteba",
+      title: "Full-Stack Developer & AI Master Student",
+      location: "Sarcelles, France",
+      cta_contact: "Contact Me",
+      cta_work: "View My Work",
     },
     about: {
-      title: 'About Me',
+      title: "About Me",
       p1: "Currently enrolled in a Master's in Artificial Intelligence at ESIIA, I'm seeking an apprenticeship to apply my technical expertise as an AI Developer or Information Systems Architect.",
-      p2: 'Passionate about digital technologies, entrepreneurship, and martial arts (Karate Shotokan, Kickboxing), I combine technical rigor with creativity to build robust and scalable solutions.'
+      p2: "Passionate about digital technologies, entrepreneurship, and martial arts (Karate Shotokan, Kickboxing), I combine technical rigor with creativity to build robust and scalable solutions.",
     },
     experience: {
-      title: 'Experience',
+      title: "Experience",
       items: [
         {
-          title:   'Freelance Web Developer',
-          company: 'Self-Employed',
-          date:    'Jan. 2026',
-          desc:    'Developed an interactive dashboard with Vue.js to visualize academic statistics in real-time. Set up a CI/CD environment to automate deployment and testing. Integrated a secure payment API for financial transactions in an educational application.',
-          icon:    'fas fa-laptop-code'
+          title: "Freelance Web Developer",
+          company: "Self-Employed",
+          date: "Jan. 2026",
+          desc: "Developed an interactive dashboard with Vue.js to visualize academic statistics in real-time. Set up a CI/CD environment to automate deployment and testing. Integrated a secure payment API for financial transactions in an educational application.",
+          icon: "fas fa-laptop-code",
         },
         {
-          title:   'Mathematics Teacher',
-          company: 'Lycée Privé Fatoumata Siré, Bamako',
-          date:    'Jan. 2025',
-          desc:    'Improved student results by 20% in one year. Implemented practical and engaging mathematics projects. Collaborated with parents to track student progress.',
-          icon:    'fas fa-chalkboard-teacher'
+          title: "Mathematics Teacher",
+          company: "Lycée Privé Fatoumata Siré, Bamako",
+          date: "Jan. 2025",
+          desc: "Improved student results by 20% in one year. Implemented practical and engaging mathematics projects. Collaborated with parents to track student progress.",
+          icon: "fas fa-chalkboard-teacher",
         },
         {
-          title:   'IT Maintenance Assistant',
-          company: 'EGITCOM',
-          date:    'Jan. 2024 — Jan. 2025',
-          desc:    'Provided fast technical assistance to maximize client satisfaction. Trained users for effective adoption of IT tools. Implemented security protocols to protect sensitive data.',
-          icon:    'fas fa-tools'
+          title: "IT Maintenance Assistant",
+          company: "EGITCOM",
+          date: "Jan. 2024 — Jan. 2025",
+          desc: "Provided fast technical assistance to maximize client satisfaction. Trained users for effective adoption of IT tools. Implemented security protocols to protect sensitive data.",
+          icon: "fas fa-tools",
         },
         {
-          title:   'IT Assistant',
-          company: 'EGITCOM, Bamako',
-          date:    'Jul. 2024 — Oct. 2024',
-          desc:    'User assistance and first-level support. Installation and configuration of workstations. Awareness of good digital practices.',
-          icon:    'fas fa-desktop'
-        }
-      ]
+          title: "IT Assistant",
+          company: "EGITCOM, Bamako",
+          date: "Jul. 2024 — Oct. 2024",
+          desc: "User assistance and first-level support. Installation and configuration of workstations. Awareness of good digital practices.",
+          icon: "fas fa-desktop",
+        },
+      ],
     },
     projects: {
-      title: 'Projects',
+      title: "Projects",
       items: [
         /* Live projects first — easy access for recruiters */
         {
-          title: 'GELGEC BTP — Website',
-          desc:  "Professional showcase website for Christian Njankeu's GELGEC BTP company: services, references, and contact information.",
-          link:  'View Project',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://gelgecbtp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-          icon:  'fas fa-hard-hat'
+          title: "GELGEC BTP — Website",
+          desc: "Professional showcase website for Christian Njankeu's GELGEC BTP company: services, references, and contact information.",
+          link: "View Project",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://gelgecbtp.vercel.app/",
+          image:
+            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+          icon: "fas fa-hard-hat",
         },
         {
-          title: 'BTP Abdoulaye KEITA — Website (DÉBLOQUÉ BTP)',
-          desc:  "Professional showcase website for Abdoulaye KEITA's private BTP company: services, references, and contact.",
-          link:  'View Project',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://debloque-btp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80',
-          icon:  'fas fa-tools'
+          title: "BTP Abdoulaye KEITA — Website (DÉBLOQUÉ BTP)",
+          desc: "Professional showcase website for Abdoulaye KEITA's private BTP company: services, references, and contact.",
+          link: "View Project",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://debloque-btp.vercel.app/",
+          image:
+            "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80",
+          icon: "fas fa-tools",
         },
         {
-          title: 'DS Service — Website (DIAK-SERVICE)',
-          desc:  'Professional showcase website for DS Service, presenting IT services, past achievements, and contact details.',
-          link:  'View Project',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://diak-service.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
-          icon:  'fas fa-laptop'
+          title: "DS Service — Website (DIAK-SERVICE)",
+          desc: "Professional showcase website for DS Service, presenting IT services, past achievements, and contact details.",
+          link: "View Project",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://diak-service.vercel.app/",
+          image:
+            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80",
+          icon: "fas fa-laptop",
         },
         {
-          title: 'Student Complaint Management',
-          desc:  'Centralized platform allowing students to submit, track, and resolve complaints with full transparency and automated routing.',
-          link:  'View Project',
-          tags:  ['React', 'Django', 'Python', 'MySQL'],
-          url:   'https://grstiondesreclamations.web.app/',
-          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
-          icon:  'fas fa-comments'
+          title: "Student Complaint Management",
+          desc: "Centralized platform allowing students to submit, track, and resolve complaints with full transparency and automated routing.",
+          link: "View Project",
+          tags: ["React", "Django", "Python", "MySQL"],
+          url: "https://grstiondesreclamations.web.app/",
+          image:
+            "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80",
+          icon: "fas fa-comments",
         },
         {
-          title: 'BTP TAMBA KOUYATE — Website (KOUYATE-BTP)',
-          desc:  "Professional showcase website for Tamba KOUYATE's BTP company: technical design, site supervision, services, and project portfolio in Bamako.",
-          link:  'View Project',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://kouyate-btp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-          icon:  'fas fa-hard-hat'
+          title: "BTP TAMBA KOUYATE — Website (KOUYATE-BTP)",
+          desc: "Professional showcase website for Tamba KOUYATE's BTP company: technical design, site supervision, services, and project portfolio in Bamako.",
+          link: "View Project",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://kouyate-btp.vercel.app/",
+          image:
+            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+          icon: "fas fa-hard-hat",
         },
         {
-          title: 'IVO Coiffure — Hair Salon Website',
-          desc:  'Modern showcase website for IVO COIFFURE N°1 in Bamako: services, gallery, online booking, and contact for hair, beard, and beauty care.',
-          link:  'View Project',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://ivo-coiffure.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80',
-          icon:  'fas fa-cut'
+          title: "IVO Coiffure — Hair Salon Website",
+          desc: "Modern showcase website for IVO COIFFURE N°1 in Bamako: services, gallery, online booking, and contact for hair, beard, and beauty care.",
+          link: "View Project",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://ivo-coiffure.vercel.app/",
+          image:
+            "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80",
+          icon: "fas fa-cut",
         },
         {
-          title: 'missira-imprim',
-          desc:  'Modern showcase website for Missira Imprim in Bamako: presentation of printing services, custom textile and promotional goodies, project gallery, quote requests, and contact information for professional printing solutions.',
-          link:  'View Project',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://missira-imprim-site--madoudiakayeteb.replit.app/',
-          image: 'https://imprimeriedumaroc.com/wp-content/uploads/2022/12/maxresdefault.jpg',
-          icon:  'fas fa-cut'
+          title: "missira-imprim",
+          desc: "Modern showcase website for Missira Imprim in Bamako: presentation of printing services, custom textile and promotional goodies, project gallery, quote requests, and contact information for professional printing solutions.",
+          link: "View Project",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://missira-imprim-site--madoudiakayeteb.replit.app/",
+          image:
+            "https://imprimeriedumaroc.com/wp-content/uploads/2022/12/maxresdefault.jpg",
+          icon: "fas fa-cut",
         },
 
         {
-          title: 'School Management Platform',
-          desc:  'Complete digital management platform for Lycée Fatoumata Siré Touré de Samaya and partner schools: attendance, grades, timetables, and parent-teacher communication.',
-          link:  'View Project',
-          tags:  ['PHP', 'Laravel', 'Vue.js', 'MySQL'],
-          url:   'coming-soon.html?id=1',
-          image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80',
-          icon:  'fas fa-school'
+          title: "School Management Platform",
+          desc: "Complete digital management platform for Lycée Fatoumata Siré Touré de Samaya and partner schools: attendance, grades, timetables, and parent-teacher communication.",
+          link: "View Project",
+          tags: ["PHP", "Laravel", "Vue.js", "MySQL"],
+          url: "coming-soon.html?id=1",
+          image:
+            "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80",
+          icon: "fas fa-school",
         },
         {
-          title: 'ALLSHOP — E-commerce SaaS',
-          desc:  'Multi-vendor SaaS e-commerce platform enabling families and small businesses to create and manage their own online stores.',
-          link:  'View Project',
-          tags:  ['Vue.js', 'Node.js', 'MySQL', 'SaaS'],
-          url:   'coming-soon.html?id=2',
-          image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80',
-          icon:  'fas fa-shopping-cart'
+          title: "ALLSHOP — E-commerce SaaS",
+          desc: "Multi-vendor SaaS e-commerce platform enabling families and small businesses to create and manage their own online stores.",
+          link: "View Project",
+          tags: ["Vue.js", "Node.js", "MySQL", "SaaS"],
+          url: "coming-soon.html?id=2",
+          image:
+            "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+          icon: "fas fa-shopping-cart",
         },
         {
-          title: 'ImmoBko — Real Estate Mali',
-          desc:  'Real estate management platform tailored for Mali: property listings, rental management, and an owner/tenant portal.',
-          link:  'View Project',
-          tags:  ['React', 'Django', 'Python', 'MySQL'],
-          url:   'coming-soon.html?id=3',
-          image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80',
-          icon:  'fas fa-building'
+          title: "ImmoBko — Real Estate Mali",
+          desc: "Real estate management platform tailored for Mali: property listings, rental management, and an owner/tenant portal.",
+          link: "View Project",
+          tags: ["React", "Django", "Python", "MySQL"],
+          url: "coming-soon.html?id=3",
+          image:
+            "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
+          icon: "fas fa-building",
         },
         {
-          title: 'Sakina Voyage — Travel Agency',
-          desc:  'Online travel agency website for Sakina Voyage: destination catalog, custom quotes, and booking management.',
-          link:  'View Project',
-          tags:  ['React', 'CSS3', 'JavaScript'],
-          url:   'coming-soon.html?id=5',
-          image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80',
-          icon:  'fas fa-plane'
+          title: "Sakina Voyage — Travel Agency",
+          desc: "Online travel agency website for Sakina Voyage: destination catalog, custom quotes, and booking management.",
+          link: "View Project",
+          tags: ["React", "CSS3", "JavaScript"],
+          url: "coming-soon.html?id=5",
+          image:
+            "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80",
+          icon: "fas fa-plane",
         },
         {
-          title: 'PharmaShop — Pharmacy App',
-          desc:  'Complete pharmacy management app: inventory tracking, sales, prescriptions, and a real-time reporting dashboard.',
-          link:  'View Project',
-          tags:  ['PHP', 'Laravel', 'Vue.js', 'MySQL'],
-          url:   'coming-soon.html?id=6',
-          image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80',
-          icon:  'fas fa-pills'
+          title: "PharmaShop — Pharmacy App",
+          desc: "Complete pharmacy management app: inventory tracking, sales, prescriptions, and a real-time reporting dashboard.",
+          link: "View Project",
+          tags: ["PHP", "Laravel", "Vue.js", "MySQL"],
+          url: "coming-soon.html?id=6",
+          image:
+            "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80",
+          icon: "fas fa-pills",
         },
         {
-          title: 'AI Theft Detection — Supermarkets',
-          desc:  'Real-time AI-powered theft detection system for supermarkets using computer vision and behavioral pattern analysis.',
-          link:  'View Project',
-          tags:  ['Python', 'TensorFlow', 'OpenCV', 'AI'],
-          url:   'coming-soon.html?id=9',
-          image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&q=80',
-          icon:  'fas fa-eye'
+          title: "AI Theft Detection — Supermarkets",
+          desc: "Real-time AI-powered theft detection system for supermarkets using computer vision and behavioral pattern analysis.",
+          link: "View Project",
+          tags: ["Python", "TensorFlow", "OpenCV", "AI"],
+          url: "coming-soon.html?id=9",
+          image:
+            "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&q=80",
+          icon: "fas fa-eye",
         },
         {
-          title: 'Plant Disease Detection',
-          desc:  'AI system detecting plant diseases by analyzing leaf photos — providing farmers with early diagnosis and treatment recommendations.',
-          link:  'View Project',
-          tags:  ['Python', 'TensorFlow', 'Django', 'AI'],
-          url:   'coming-soon.html?id=10',
-          image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80',
-          icon:  'fas fa-leaf'
+          title: "Plant Disease Detection",
+          desc: "AI system detecting plant diseases by analyzing leaf photos — providing farmers with early diagnosis and treatment recommendations.",
+          link: "View Project",
+          tags: ["Python", "TensorFlow", "Django", "AI"],
+          url: "coming-soon.html?id=10",
+          image:
+            "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80",
+          icon: "fas fa-leaf",
         },
         {
-          title: 'Digital Textbook — Teacher Sign-in',
-          desc:  'Digital attendance application replacing paper registers: teachers sign in electronically, tracking is automated and fully transparent.',
-          link:  'View Project',
-          tags:  ['Vue.js', 'PHP', 'MySQL'],
-          url:   'coming-soon.html?id=11',
-          image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80',
-          icon:  'fas fa-book-open'
-        }
-      ]
+          title: "Digital Textbook — Teacher Sign-in",
+          desc: "Digital attendance application replacing paper registers: teachers sign in electronically, tracking is automated and fully transparent.",
+          link: "View Project",
+          tags: ["Vue.js", "PHP", "MySQL"],
+          url: "coming-soon.html?id=11",
+          image:
+            "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80",
+          icon: "fas fa-book-open",
+        },
+      ],
     },
     stack: {
-      title: 'Technical Stack',
+      title: "Technical Stack",
       categories: [
         {
-          name: 'Frontend',
+          name: "Frontend",
           items: [
-            { name: 'HTML5',      icon: 'fab fa-html5',    color: '#e34f26' },
-            { name: 'CSS3',       icon: 'fab fa-css3-alt', color: '#1572b6' },
-            { name: 'JavaScript', icon: 'fab fa-js',       color: '#f7df1e' },
-            { name: 'React',      icon: 'fab fa-react',    color: '#61dafb' },
-            { name: 'Vue.js',     icon: 'fab fa-vuejs',    color: '#42b883' }
-          ]
+            { name: "HTML5", icon: "fab fa-html5", color: "#e34f26" },
+            { name: "CSS3", icon: "fab fa-css3-alt", color: "#1572b6" },
+            { name: "JavaScript", icon: "fab fa-js", color: "#f7df1e" },
+            { name: "React", icon: "fab fa-react", color: "#61dafb" },
+            { name: "Vue.js", icon: "fab fa-vuejs", color: "#42b883" },
+          ],
         },
         {
-          name: 'Backend',
+          name: "Backend",
           items: [
-            { name: 'Python', icon: 'fab fa-python',  color: '#3776ab' },
-            { name: 'Django', icon: 'fas fa-server',  color: '#0c4b33' },
-            { name: 'PHP',    icon: 'fab fa-php',     color: '#777bb4' },
-            { name: 'Laravel',icon: 'fas fa-fire',    color: '#ff2d20' },
-            { name: 'MySQL',  icon: 'fas fa-database',color: '#4479a1' }
-          ]
+            { name: "Python", icon: "fab fa-python", color: "#3776ab" },
+            { name: "Django", icon: "fas fa-server", color: "#0c4b33" },
+            { name: "PHP", icon: "fab fa-php", color: "#777bb4" },
+            { name: "Laravel", icon: "fas fa-fire", color: "#ff2d20" },
+            { name: "MySQL", icon: "fas fa-database", color: "#4479a1" },
+          ],
         },
         {
-          name: 'Cloud & Tools',
+          name: "Cloud & Tools",
           items: [
-            { name: 'Git',     icon: 'fab fa-git-alt', color: '#f05032' },
-            { name: 'GitHub',  icon: 'fab fa-github',  color: '#181717' },
-            { name: 'AWS',     icon: 'fab fa-aws',     color: '#ff9900' },
-            { name: 'Linux',   icon: 'fab fa-linux',   color: '#fcc624' },
-            { name: 'API REST',icon: 'fas fa-plug',    color: '#2563eb' }
-          ]
-        }
-      ]
+            { name: "Git", icon: "fab fa-git-alt", color: "#f05032" },
+            { name: "GitHub", icon: "fab fa-github", color: "#181717" },
+            { name: "AWS", icon: "fab fa-aws", color: "#ff9900" },
+            { name: "Linux", icon: "fab fa-linux", color: "#fcc624" },
+            { name: "API REST", icon: "fas fa-plug", color: "#2563eb" },
+          ],
+        },
+      ],
     },
     contact: {
-      title:    'Get In Touch',
-      subtitle: "I'm currently looking for an apprenticeship in AI Development or Information Systems Architecture. Whether you have an opportunity or just want to say hi, feel free to reach out!",
-      email:    'Send an Email',
-      linkedin: 'LinkedIn'
+      title: "Get In Touch",
+      subtitle:
+        "I'm currently looking for an apprenticeship in AI Development or Information Systems Architecture. Whether you have an opportunity or just want to say hi, feel free to reach out!",
+      email: "Send an Email",
+      linkedin: "LinkedIn",
     },
     footer: {
-      copyright: '© 2026 Madou Diakayeteba. All rights reserved.'
-    }
+      copyright: "© 2026 Madou Diakayeteba. All rights reserved.",
+    },
   },
 
   /* ---- FRENCH ---- */
   fr: {
     nav: {
-      about:      'À propos',
-      experience: 'Expérience',
-      projects:   'Projets',
-      stack:      'Stack',
-      contact:    'Contact'
+      about: "À propos",
+      experience: "Expérience",
+      projects: "Projets",
+      stack: "Stack",
+      contact: "Contact",
     },
     hero: {
-      greeting:    'Bonjour, je suis Madou Diakayeteba',
-      title:       'Développeur Full-Stack & Étudiant Master IA',
-      location:    'Sarcelles, France',
-      cta_contact: 'Me Contacter',
-      cta_work:    'Voir mes Projets'
+      greeting: "Bonjour, je suis Madou Diakayeteba",
+      title: "Développeur Full-Stack & Étudiant Master IA",
+      location: "Sarcelles, France",
+      cta_contact: "Me Contacter",
+      cta_work: "Voir mes Projets",
     },
     about: {
-      title: 'À Propos',
-      p1: "Actuellement en Master 1 Intelligence Artificielle à l'ESIIA, je recherche une alternance pour mettre mon expertise technique au service de vos projets en tant que Développeur IA ou Architecte des SI.",
-      p2: 'Passionné par les technologies numériques, Cofondateur du Startup AnWKa IT Solutions, je combine rigueur technique et créativité pour concevoir des solutions robustes et scalables.'
+      title: "À Propos",
+      p1: "Étudiant en Master 1 SIGLIS à l'UPPA (Génie Logiciel & Intelligence Artificielle) et Développeur Full-Stack, je recherche une alternance à partir de septembre 2026.",
+
+      p2: "Spécialisé dans le développement d'applications web (Python/Django, React, PHP/Laravel) et l'ingénierie des données, je mets mon expertise technique et mon esprit d'initiative au service de projets logiciels performants et scalables.",
+      p3: "Passionné par les technologies numériques et Cofondateur de la Startup AnWouKa IT Solutions, je combine rigueur technique et créativité pour concevoir des solutions applicatives robustes, évolutives et adaptées aux besoins métiers.",
     },
     experience: {
-      title: 'Expérience',
+      title: "Expérience",
       items: [
         {
-          title:   'Développeur Web Freelance',
-          company: 'Auto-Entrepreneur',
-          date:    'Janv. 2026',
-          desc:    "Développement d'un tableau de bord interactif avec Vue.js pour visualiser en temps réel les statistiques académiques. Mise en place d'un environnement CI/CD pour automatiser le déploiement et les tests. Intégration d'une API de paiement sécurisé pour les transactions financières.",
-          icon:    'fas fa-laptop-code'
+          title: "Développeur Web Freelance",
+          company: "Auto-Entrepreneur",
+          date: "Janv. 2026",
+          desc: "Développement d'un tableau de bord interactif avec Vue.js pour visualiser en temps réel les statistiques académiques. Mise en place d'un environnement CI/CD pour automatiser le déploiement et les tests. Intégration d'une API de paiement sécurisé pour les transactions financières.",
+          icon: "fas fa-laptop-code",
         },
         {
-          title:   'Enseignant de Mathématiques',
-          company: 'Lycée Privé Fatoumata Siré, Bamako',
-          date:    'Janv. 2025',
-          desc:    "Amélioration des résultats des élèves de 20% en un an. Mise en place de projets mathématiques pratiques et engageants. Collaboration avec les parents pour suivre les progrès des élèves.",
-          icon:    'fas fa-chalkboard-teacher'
+          title: "Enseignant de Mathématiques",
+          company: "Lycée Privé Fatoumata Siré, Bamako",
+          date: "Janv. 2025",
+          desc: "Amélioration des résultats des élèves de 20% en un an. Mise en place de projets mathématiques pratiques et engageants. Collaboration avec les parents pour suivre les progrès des élèves.",
+          icon: "fas fa-chalkboard-teacher",
         },
         {
-          title:   'Assistant Maintenance Informatique',
-          company: 'EGITCOM',
-          date:    'Janv. 2024 — Janv. 2025',
-          desc:    'Assistance technique rapide pour maximiser la satisfaction client. Formation des utilisateurs pour une adoption efficace des outils informatiques. Mise en place de protocoles de sécurité pour protéger les données sensibles.',
-          icon:    'fas fa-tools'
+          title: "Assistant Maintenance Informatique",
+          company: "EGITCOM",
+          date: "Janv. 2024 — Janv. 2025",
+          desc: "Assistance technique rapide pour maximiser la satisfaction client. Formation des utilisateurs pour une adoption efficace des outils informatiques. Mise en place de protocoles de sécurité pour protéger les données sensibles.",
+          icon: "fas fa-tools",
         },
         {
-          title:   'Assistant Informatique',
-          company: 'EGITCOM, Bamako',
-          date:    'Juil. 2024 — Oct. 2024',
-          desc:    'Assistance utilisateurs et support de premier niveau. Installation et configuration de postes de travail. Sensibilisation aux bonnes pratiques numériques.',
-          icon:    'fas fa-desktop'
-        }
-      ]
+          title: "Assistant Informatique",
+          company: "EGITCOM, Bamako",
+          date: "Juil. 2024 — Oct. 2024",
+          desc: "Assistance utilisateurs et support de premier niveau. Installation et configuration de postes de travail. Sensibilisation aux bonnes pratiques numériques.",
+          icon: "fas fa-desktop",
+        },
+      ],
     },
     projects: {
-      title: 'Projets',
+      title: "Projets",
       items: [
         /* Projets en ligne en premier — visibilité pour les recruteurs */
         {
-          title: 'GELGEC BTP — Vitrine',
-          desc:  "Site vitrine professionnel pour l'entreprise BTP de Christian Njankeu : services, références et informations de contact.",
-          link:  'Voir le Projet',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://gelgecbtp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-          icon:  'fas fa-hard-hat'
+          title: "GELGEC BTP — Vitrine",
+          desc: "Site vitrine professionnel pour l'entreprise BTP de Christian Njankeu : services, références et informations de contact.",
+          link: "Voir le Projet",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://gelgecbtp.vercel.app/",
+          image:
+            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+          icon: "fas fa-hard-hat",
         },
         {
-          title: 'Site web BTP Abdoulaye KEITA — DÉBLOQUÉ BTP',
-          desc:  "Site vitrine professionnel pour l'entreprise BTP d'Abdoulaye KEITA : services, références et informations de contact.",
-          link:  'Voir le Projet',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://debloque-btp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80',
-          icon:  'fas fa-tools'
+          title: "Site web BTP Abdoulaye KEITA — DÉBLOQUÉ BTP",
+          desc: "Site vitrine professionnel pour l'entreprise BTP d'Abdoulaye KEITA : services, références et informations de contact.",
+          link: "Voir le Projet",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://debloque-btp.vercel.app/",
+          image:
+            "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80",
+          icon: "fas fa-tools",
         },
         {
-          title: 'DS Service — Site Vitrine (DIAK-SERVICE)',
-          desc:  "Site vitrine professionnel pour DS Service : présentation des services informatiques, réalisations et coordonnées de contact.",
-          link:  'Voir le Projet',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://diak-service.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80',
-          icon:  'fas fa-laptop'
+          title: "DS Service — Site Vitrine (DIAK-SERVICE)",
+          desc: "Site vitrine professionnel pour DS Service : présentation des services informatiques, réalisations et coordonnées de contact.",
+          link: "Voir le Projet",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://diak-service.vercel.app/",
+          image:
+            "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80",
+          icon: "fas fa-laptop",
         },
         {
-          title: 'Gestion des Réclamations Étudiants',
-          desc:  "Plateforme centralisée permettant aux étudiants de soumettre, suivre et résoudre leurs réclamations avec transparence et routage automatisé.",
-          link:  'Voir le Projet',
-          tags:  ['React', 'Django', 'Python', 'MySQL'],
-          url:   'https://grstiondesreclamations.web.app/',
-          image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80',
-          icon:  'fas fa-comments'
+          title: "Gestion des Réclamations Étudiants",
+          desc: "Plateforme centralisée permettant aux étudiants de soumettre, suivre et résoudre leurs réclamations avec transparence et routage automatisé.",
+          link: "Voir le Projet",
+          tags: ["React", "Django", "Python", "MySQL"],
+          url: "https://grstiondesreclamations.web.app/",
+          image:
+            "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80",
+          icon: "fas fa-comments",
         },
         // KOUYATE-BTP en 5e position pour donner de la visibilité à ce projet clé, même s'il est en ligne depuis peu — c'est un projet important pour moi et je veux m'assurer qu'il est vu par les recruteurs qui visitent la section projets avant de scroller vers les projets à venir.
         {
-          title: 'KOUYATE-BTP — SiteVitrine (KOUYATE-BTP)',
-          desc:  "Site vitrine pour KOUYATE-BTP : conception technique, supervision de chantiers, services, réalisations et contact à Bamako.",
-          link:  'Voir le Projet',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://kouyate-btp.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
-          icon:  'fas fa-hard-hat'
+          title: "KOUYATE-BTP — SiteVitrine (KOUYATE-BTP)",
+          desc: "Site vitrine pour KOUYATE-BTP : conception technique, supervision de chantiers, services, réalisations et contact à Bamako.",
+          link: "Voir le Projet",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://kouyate-btp.vercel.app/",
+          image:
+            "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+          icon: "fas fa-hard-hat",
         },
         {
-          title: 'Salon de coiffure — Ivo Coiffure',
-          desc:  "Site vitrine moderne pour IVO COIFFURE N°1 à Bamako : services, galerie, réservation et contact pour coiffure, barbe et soins beauté.",
-          link:  'Voir le Projet',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://ivo-coiffure.vercel.app/',
-          image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80',
-          icon:  'fas fa-cut'
+          title: "Salon de coiffure — Ivo Coiffure",
+          desc: "Site vitrine moderne pour IVO COIFFURE N°1 à Bamako : services, galerie, réservation et contact pour coiffure, barbe et soins beauté.",
+          link: "Voir le Projet",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://ivo-coiffure.vercel.app/",
+          image:
+            "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80",
+          icon: "fas fa-cut",
         },
         {
-          title: 'Plateforme de Gestion Scolaire',
-          desc:  "Plateforme de gestion complète pour le Lycée Fatoumata Siré Touré de Samaya et tout établissement partenaire : présences, notes, emplois du temps et communication parents-enseignants.",
-          link:  'Voir le Projet',
-          tags:  ['PHP', 'Laravel', 'Vue.js', 'MySQL'],
-          url:   'coming-soon.html?id=1',
-          image: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80',
-          icon:  'fas fa-school'
+          title: "Plateforme de Gestion Scolaire",
+          desc: "Plateforme de gestion complète pour le Lycée Fatoumata Siré Touré de Samaya et tout établissement partenaire : présences, notes, emplois du temps et communication parents-enseignants.",
+          link: "Voir le Projet",
+          tags: ["PHP", "Laravel", "Vue.js", "MySQL"],
+          url: "coming-soon.html?id=1",
+          image:
+            "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80",
+          icon: "fas fa-school",
         },
         {
-          title: 'ALLSHOP — E-commerce SaaS',
-          desc:  "Plateforme SaaS multi-vendeurs permettant aux familles et petites entreprises de créer et gérer leur boutique en ligne.",
-          link:  'Voir le Projet',
-          tags:  ['Vue.js', 'Node.js', 'MySQL', 'SaaS'],
-          url:   'coming-soon.html?id=2',
-          image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80',
-          icon:  'fas fa-shopping-cart'
+          title: "ALLSHOP — E-commerce SaaS",
+          desc: "Plateforme SaaS multi-vendeurs permettant aux familles et petites entreprises de créer et gérer leur boutique en ligne.",
+          link: "Voir le Projet",
+          tags: ["Vue.js", "Node.js", "MySQL", "SaaS"],
+          url: "coming-soon.html?id=2",
+          image:
+            "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+          icon: "fas fa-shopping-cart",
         },
         {
-          title: 'ImmoBko — Immobilier Mali',
-          desc:  "Plateforme de gestion immobilière adaptée au Mali : annonces de biens, gestion locative et portail propriétaires/locataires.",
-          link:  'Voir le Projet',
-          tags:  ['React', 'Django', 'Python', 'MySQL'],
-          url:   'coming-soon.html?id=3',
-          image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80',
-          icon:  'fas fa-building'
+          title: "ImmoBko — Immobilier Mali",
+          desc: "Plateforme de gestion immobilière adaptée au Mali : annonces de biens, gestion locative et portail propriétaires/locataires.",
+          link: "Voir le Projet",
+          tags: ["React", "Django", "Python", "MySQL"],
+          url: "coming-soon.html?id=3",
+          image:
+            "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&q=80",
+          icon: "fas fa-building",
         },
         {
-          title: 'Sakina Voyage — Agence de Voyage',
-          desc:  "Site web pour l'agence Sakina Voyage : catalogue de destinations, devis personnalisés et gestion des réservations en ligne.",
-          link:  'Voir le Projet',
-          tags:  ['React', 'CSS3', 'JavaScript'],
-          url:   'coming-soon.html?id=5',
-          image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80',
-          icon:  'fas fa-plane'
+          title: "Sakina Voyage — Agence de Voyage",
+          desc: "Site web pour l'agence Sakina Voyage : catalogue de destinations, devis personnalisés et gestion des réservations en ligne.",
+          link: "Voir le Projet",
+          tags: ["React", "CSS3", "JavaScript"],
+          url: "coming-soon.html?id=5",
+          image:
+            "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&q=80",
+          icon: "fas fa-plane",
         },
         {
-          title: 'PharmaShop — Gestion Pharmacie (PHARMASHOP)',
-          desc:  "Application complète de gestion de pharmacie : stocks, ventes, ordonnances et tableau de bord de reporting en temps réel.",
-          link:  'Voir le Projet',
-          tags:  ['PHP', 'Laravel', 'Vue.js', 'MySQL'],
-          url:   'coming-soon.html?id=6',
-          image: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80',
-          icon:  'fas fa-pills'
+          title: "PharmaShop — Gestion Pharmacie (PHARMASHOP)",
+          desc: "Application complète de gestion de pharmacie : stocks, ventes, ordonnances et tableau de bord de reporting en temps réel.",
+          link: "Voir le Projet",
+          tags: ["PHP", "Laravel", "Vue.js", "MySQL"],
+          url: "coming-soon.html?id=6",
+          image:
+            "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=600&q=80",
+          icon: "fas fa-pills",
         },
         {
-          title: 'Système de détection de Vols par IA',
-          desc:  "Système de détection de vols en temps réel dans les supermarchés, basé sur la vision par ordinateur et l'analyse comportementale.",
-          link:  'Voir le Projet',
-          tags:  ['Python', 'TensorFlow', 'OpenCV', 'IA'],
-          url:   'coming-soon.html?id=9',
-          image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&q=80',
-          icon:  'fas fa-eye'
+          title: "Système de détection de Vols par IA",
+          desc: "Système de détection de vols en temps réel dans les supermarchés, basé sur la vision par ordinateur et l'analyse comportementale.",
+          link: "Voir le Projet",
+          tags: ["Python", "TensorFlow", "OpenCV", "IA"],
+          url: "coming-soon.html?id=9",
+          image:
+            "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=600&q=80",
+          icon: "fas fa-eye",
         },
         {
-          title: 'Plateforme de détection de Maladies des Plantes',
-          desc:  "Système IA de diagnostic des maladies des plantes par analyse photo de feuilles — aide les agriculteurs avec des recommandations de traitement.",
-          link:  'Voir le Projet',
-          tags:  ['Python', 'TensorFlow', 'Django', 'IA'],
-          url:   'coming-soon.html?id=10',
-          image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80',
-          icon:  'fas fa-leaf'
+          title: "Plateforme de détection de Maladies des Plantes",
+          desc: "Système IA de diagnostic des maladies des plantes par analyse photo de feuilles — aide les agriculteurs avec des recommandations de traitement.",
+          link: "Voir le Projet",
+          tags: ["Python", "TensorFlow", "Django", "IA"],
+          url: "coming-soon.html?id=10",
+          image:
+            "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80",
+          icon: "fas fa-leaf",
         },
         {
-          title: 'Cahier de Texte Numérique',
-          desc:  "Application d'émargement numérique remplaçant les registres papier : les enseignants signent électroniquement, le suivi est automatisé et transparent.",
-          link:  'Voir le Projet',
-          tags:  ['Vue.js', 'PHP','Laravel','MySQL'],
-          url:   'coming-soon.html?id=11',
-          image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80',
-          icon:  'fas fa-book-open'
+          title: "Cahier de Texte Numérique",
+          desc: "Application d'émargement numérique remplaçant les registres papier : les enseignants signent électroniquement, le suivi est automatisé et transparent.",
+          link: "Voir le Projet",
+          tags: ["Vue.js", "PHP", "Laravel", "MySQL"],
+          url: "coming-soon.html?id=11",
+          image:
+            "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&q=80",
+          icon: "fas fa-book-open",
         },
         {
-          title: 'ALLSHOP FACTURATION',
-          desc:  "Application de gestion des ventes pour les commerçants ",
-          link:  'Voir le Projet',
-          tags:  ['Vue.js', 'PYTHON','DJANGO','MySQL'],
-          url:   'http://madou223.pythonanywhere.com/',
-          image: 'https://public-files.gumroad.com/variants/tct7wl5dfwb13m2fvyte6q9hsfow/3298c3eb001bbed90f1d616da66708480096a0a1b6e81bd4f8a2d6e9b831d301',
-          icon:  'fas fa-book-open'
+          title: "ALLSHOP FACTURATION",
+          desc: "Application de gestion des ventes pour les commerçants ",
+          link: "Voir le Projet",
+          tags: ["Vue.js", "PYTHON", "DJANGO", "MySQL"],
+          url: "http://madou223.pythonanywhere.com/",
+          image:
+            "https://public-files.gumroad.com/variants/tct7wl5dfwb13m2fvyte6q9hsfow/3298c3eb001bbed90f1d616da66708480096a0a1b6e81bd4f8a2d6e9b831d301",
+          icon: "fas fa-book-open",
         },
 
         {
-          title: 'missira-imprim',
-          desc:  'Site vitrine moderne pour Missira Imprim à Bamako : présentation des services d \ impression, textile personnalisé et goodies promotionnels, galerie de projets, demandes de devis et informations de contact pour des solutions d\ impression professionnelles.',
-          link:  'View Project',
-          tags:  ['HTML5', 'CSS3', 'JavaScript'],
-          url:   'https://missira-imprim-site--madoudiakayeteb.replit.app/',
-          image: 'https://imprimeriedumaroc.com/wp-content/uploads/2022/12/maxresdefault.jpg',
-          icon:  'fas fa-cut'
+          title: "missira-imprim",
+          desc: "Site vitrine moderne pour Missira Imprim à Bamako : présentation des services d \ impression, textile personnalisé et goodies promotionnels, galerie de projets, demandes de devis et informations de contact pour des solutions d\ impression professionnelles.",
+          link: "View Project",
+          tags: ["HTML5", "CSS3", "JavaScript"],
+          url: "https://missira-imprim-site--madoudiakayeteb.replit.app/",
+          image:
+            "https://imprimeriedumaroc.com/wp-content/uploads/2022/12/maxresdefault.jpg",
+          icon: "fas fa-cut",
         },
-      ]
+      ],
     },
     stack: {
-      title: 'Stack Technique',
+      title: "Stack Technique",
       categories: [
         {
-          name: 'Frontend',
+          name: "Frontend",
           items: [
-            { name: 'HTML5',      icon: 'fab fa-html5',    color: '#e34f26' },
-            { name: 'CSS3',       icon: 'fab fa-css3-alt', color: '#1572b6' },
-            { name: 'JavaScript', icon: 'fab fa-js',       color: '#f7df1e' },
-            { name: 'React',      icon: 'fab fa-react',    color: '#61dafb' },
-            { name: 'Vue.js',     icon: 'fab fa-vuejs',    color: '#42b883' }
-          ]
+            { name: "HTML5", icon: "fab fa-html5", color: "#e34f26" },
+            { name: "CSS3", icon: "fab fa-css3-alt", color: "#1572b6" },
+            { name: "JavaScript", icon: "fab fa-js", color: "#f7df1e" },
+            { name: "React", icon: "fab fa-react", color: "#61dafb" },
+            { name: "Vue.js", icon: "fab fa-vuejs", color: "#42b883" },
+          ],
         },
         {
-          name: 'Backend',
+          name: "Backend",
           items: [
-            { name: 'Python', icon: 'fab fa-python',  color: '#3776ab' },
-            { name: 'Django', icon: 'fas fa-server',  color: '#0c4b33' },
-            { name: 'PHP',    icon: 'fab fa-php',     color: '#777bb4' },
-            { name: 'Laravel',icon: 'fas fa-fire',    color: '#ff2d20' },
-            { name: 'MySQL',  icon: 'fas fa-database',color: '#4479a1' }
-          ]
+            { name: "Python", icon: "fab fa-python", color: "#3776ab" },
+            { name: "Django", icon: "fas fa-server", color: "#0c4b33" },
+            { name: "PHP", icon: "fab fa-php", color: "#777bb4" },
+            { name: "Laravel", icon: "fas fa-fire", color: "#ff2d20" },
+            { name: "MySQL", icon: "fas fa-database", color: "#4479a1" },
+          ],
         },
         {
-          name: 'Cloud & Outils',
+          name: "Cloud & Outils",
           items: [
-            { name: 'Git',     icon: 'fab fa-git-alt', color: '#f05032' },
-            { name: 'GitHub',  icon: 'fab fa-github',  color: '#181717' },
-            { name: 'AWS',     icon: 'fab fa-aws',     color: '#ff9900' },
-            { name: 'Linux',   icon: 'fab fa-linux',   color: '#fcc624' },
-            { name: 'API REST',icon: 'fas fa-plug',    color: '#0d43b8' }
-          ]
-        }
-      ]
+            { name: "Git", icon: "fab fa-git-alt", color: "#f05032" },
+            { name: "GitHub", icon: "fab fa-github", color: "#181717" },
+            { name: "AWS", icon: "fab fa-aws", color: "#ff9900" },
+            { name: "Linux", icon: "fab fa-linux", color: "#fcc624" },
+            { name: "API REST", icon: "fas fa-plug", color: "#0d43b8" },
+          ],
+        },
+      ],
     },
     contact: {
-      title:    'Me Contacter',
-      subtitle: "Je suis actuellement à la recherche d'une alternance en développement IA ou architecture des systèmes d'information. N'hésitez pas à me contacter pour toute opportunité !",
-      email:    'Envoyer un Email',
-      linkedin: 'LinkedIn'
+      title: "Me Contacter",
+      subtitle:
+        "Je suis actuellement à la recherche d'une alternance en développement IA ou architecture des systèmes d'information. N'hésitez pas à me contacter pour toute opportunité !",
+      email: "Envoyer un Email",
+      linkedin: "LinkedIn",
     },
     footer: {
-      copyright: '© 2026 Madou Diakayeteba. Tous droits réservés.'
-    }
-  }
+      copyright: "© 2026 Madou Diakayeteba. Tous droits réservés.",
+    },
+  },
 };
 
 /* ============================================================
