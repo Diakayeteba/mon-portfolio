@@ -19,10 +19,10 @@ const translations = {
     },
     about: {
       title: "About Me",
-      p1: "A first-year Master's student in SIGLIS at UPPA (Software Engineering & Artificial Intelligence) and a Full-Stack Developer, I am seeking a work-study placement starting in September 2026.",
-      p2: "Schedule: 2-3 weeks at the company / 2-3 weeks at university",
-      p3: "Specializing in web application development (Python/Django, React, PHP/Laravel) and data engineering, I apply my technical expertise and proactive mindset to high-performance, scalable software projects.",
-      p4: "Passionate about digital technologies and a co-founder of the startup AnWouKa IT Solutions, I combine technical rigor with creativity to design robust, scalable application solutions tailored to business needs.",
+      p1: "As a first-year Master's student at the University of Pau and the Adour Region (UPPA), I am seeking a 24-month work-study placement in software development, data engineering, or DevOps.",
+      p2: "An experienced Full-Stack developer (Python/Django, PHP/Laravel, JS/TypeScript, React/Next.js) and co-founder of the startup AnWKa IT Solutions, I design robust, scalable digital solutions tailored to business needs.",
+      p3: "My approach combines engineering rigor, agility, and a focus on optimization.",
+      p4: "Schedule: 2-3 weeks at the company / 2-3 weeks at university",
     },
     experience: {
       title: "Experience",
@@ -279,10 +279,10 @@ const translations = {
     },
     about: {
       title: "À Propos",
-      p1: "Étudiant en Master 1 SIGLIS à l'UPPA (Génie Logiciel & Intelligence Artificielle) et Développeur Full-Stack, je recherche une alternance à partir de septembre 2026.",
-      p2: "Rythme : 2 à 3 sem. Entreprise / 2 à 3 sem. École",
-      p3: "Spécialisé dans le développement d'applications web (Python/Django, React, PHP/Laravel) et l'ingénierie des données, je mets mon expertise technique et mon esprit d'initiative au service de projets logiciels performants et scalables.",
-      p4: "Passionné par les technologies numériques et Cofondateur de la Startup AnWouKa IT Solutions, je combine rigueur technique et créativité pour concevoir des solutions applicatives robustes, évolutives et adaptées aux besoins métiers.",
+      p1: "Étudiant en Master 1 à l'Université de Pau et des Pays de l'Adour (UPPA), je suis à la recherche d'une alternance de 24 mois en développement logiciel, ingénierie de données ou DevOps.",
+      p2: "Développeur Full-Stack expérimenté (Python/Django, PHP/Laravel, JS/TypeScript, React/Next.js) et cofondateur de la startup AnWKa IT Solutions, je conçois des solutions numériques robustes, évolutives et adaptées aux enjeux métiers.",
+      p3: "Mon approche allie rigueur d'ingénierie, agilité et sens de l'optimisation.",
+      p4: "Rythme : 2 à 3 sem. Entreprise / 2 à 3 sem. École",
     },
     experience: {
       title: "Expérience",
