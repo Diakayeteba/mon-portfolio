@@ -28,10 +28,10 @@ const translations = {
       title: "Experience",
       items: [
         {
-          title: "Freelance Web Developer",
+          title: "FREELANCE FULL-STACK DEVELOPER | ",
           company: "Self-Employed",
-          date: "Jan. 2026",
-          desc: "Developed an interactive dashboard with Vue.js to visualize academic statistics in real-time. Set up a CI/CD environment to automate deployment and testing. Integrated a secure payment API for financial transactions in an educational application.",
+          date: "Sept. 2025 - Present",
+          desc: "Design & Development: Creation of web platforms, showcase sites, and custom applications (DEBLOQUE-BTP, GELGEC, Diak-Service). Architecture & API: REST API integration, database management (MySQL, PostgreSQL), and payment systems. Deployment & SEO: Hosting and SEO optimization for customer acquisition.",
           icon: "fas fa-laptop-code",
         },
         {
@@ -288,10 +288,10 @@ const translations = {
       title: "Expérience",
       items: [
         {
-          title: "Développeur Web Freelance",
+          title: "DÉVELOPPEUR FULL-STACK FREELANCE ",
           company: "Auto-Entrepreneur",
-          date: "Janv. 2026",
-          desc: "Développement d'un tableau de bord interactif avec Vue.js pour visualiser en temps réel les statistiques académiques. Mise en place d'un environnement CI/CD pour automatiser le déploiement et les tests. Intégration d'une API de paiement sécurisé pour les transactions financières.",
+          date: "Sept. 2025 - Présent",
+          desc: "Conception & Développement : Création de plateformes web, vitrines et applications sur-mesure (DEBLOQUE-BTP, GELGEC, Diak-Service).  Architecture & API : Intégration d'APIs REST, gestion de bases de données (MySQL, PostgreSQL) et systèmes de paiement.  Déploiement & SEO : Hébergement et optimisation du référencement naturel pour l'acquisition client.",
           icon: "fas fa-laptop-code",
         },
         {
