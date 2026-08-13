@@ -19,9 +19,8 @@ const translations = {
     },
     about: {
       title: "About Me",
-      p1: "As a first-year Master's student at the University of Pau and the Adour Region (UPPA), I am seeking a 24-month work-study placement in software development, data engineering, or DevOps.",
-      p2: "An experienced Full-Stack developer (Python/Django, PHP/Laravel, JS/TypeScript, React/Next.js) and co-founder of the startup AnWKa IT Solutions, I design robust, scalable digital solutions tailored to business needs.My approach combines engineering rigor, agility, and a focus on optimization. Schedule: 2-3 weeks at the company / 2-3 weeks at university",
-     
+      p1: "As a first-year Master's student at the University of Pau and the Adour Region (UPPA), I am seeking a 24-month work-study placement in software development, data engineering, or DevOps. Schedule: 2-3 weeks at the company / 2-3 weeks at university",
+      p2: "An experienced Full-Stack developer (Python/Django, PHP/Laravel, JS/TypeScript, React/Next.js) and co-founder of the startup AnWKa IT Solutions, I design robust, scalable digital solutions tailored to business needs.My approach combines engineering rigor, agility, and a focus on optimization.",
     },
     experience: {
       title: "Experience",
@@ -278,9 +277,8 @@ const translations = {
     },
     about: {
       title: "À Propos",
-      p1: "Étudiant en Master 1 à l'Université de Pau et des Pays de l'Adour (UPPA), je suis à la recherche d'une alternance de 24 mois en développement logiciel, ingénierie de données ou DevOps.",
-      p2: "Développeur Full-Stack expérimenté (Python/Django, PHP/Laravel, JS/TypeScript, React/Next.js) et cofondateur de la startup AnWKa IT Solutions, je conçois des solutions numériques robustes, évolutives et adaptées aux enjeux métiers. Mon approche allie rigueur d'ingénierie, agilité et sens de l'optimisation. Rythme : 2 à 3 sem. Entreprise / 2 à 3 sem. École",
-     
+      p1: "Étudiant en Master 1 à l'Université de Pau et des Pays de l'Adour (UPPA), je suis à la recherche d'une alternance de 24 mois en développement logiciel, ingénierie de données ou DevOps. Rythme : 2 à 3 sem. Entreprise / 2 à 3 sem. École",
+      p2: "Développeur Full-Stack expérimenté (Python/Django, PHP/Laravel, JS/TypeScript, React/Next.js) et cofondateur de la startup AnWKa IT Solutions, je conçois des solutions numériques robustes, évolutives et adaptées aux enjeux métiers. Mon approche allie rigueur d'ingénierie, agilité et sens de l'optimisation.",
     },
     experience: {
       title: "Expérience",
