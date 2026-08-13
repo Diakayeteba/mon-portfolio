@@ -13,14 +13,16 @@ const translations = {
     hero: {
       greeting: "Hi, I'm Madou Diakayeteba",
       title: "Full-Stack Developer & AI Master Student",
-      location: "Sarcelles, France",
+      location: "Anglet (64), France",
       cta_contact: "Contact Me",
       cta_work: "View My Work",
     },
     about: {
       title: "About Me",
-      p1: "Currently enrolled in a Master's in Artificial Intelligence at ESIIA, I'm seeking an apprenticeship to apply my technical expertise as an AI Developer or Information Systems Architect.",
-      p2: "Passionate about digital technologies, entrepreneurship, and martial arts (Karate Shotokan, Kickboxing), I combine technical rigor with creativity to build robust and scalable solutions.",
+      p1: "A first-year Master's student in SIGLIS at UPPA (Software Engineering & Artificial Intelligence) and a Full-Stack Developer, I am seeking a work-study placement starting in September 2026.",
+      p2: "Schedule: 2-3 weeks at the company / 2-3 weeks at university",
+      p3: "Specializing in web application development (Python/Django, React, PHP/Laravel) and data engineering, I apply my technical expertise and proactive mindset to high-performance, scalable software projects.",
+      p4: "Passionate about digital technologies and a co-founder of the startup AnWouKa IT Solutions, I combine technical rigor with creativity to design robust, scalable application solutions tailored to business needs.",
     },
     experience: {
       title: "Experience",
@@ -271,16 +273,16 @@ const translations = {
     hero: {
       greeting: "Bonjour, je suis Madou Diakayeteba",
       title: "Développeur Full-Stack & Étudiant Master IA",
-      location: "Sarcelles, France",
+      location: "Anglet (64), France",
       cta_contact: "Me Contacter",
       cta_work: "Voir mes Projets",
     },
     about: {
       title: "À Propos",
       p1: "Étudiant en Master 1 SIGLIS à l'UPPA (Génie Logiciel & Intelligence Artificielle) et Développeur Full-Stack, je recherche une alternance à partir de septembre 2026.",
-
-      p2: "Spécialisé dans le développement d'applications web (Python/Django, React, PHP/Laravel) et l'ingénierie des données, je mets mon expertise technique et mon esprit d'initiative au service de projets logiciels performants et scalables.",
-      p3: "Passionné par les technologies numériques et Cofondateur de la Startup AnWouKa IT Solutions, je combine rigueur technique et créativité pour concevoir des solutions applicatives robustes, évolutives et adaptées aux besoins métiers.",
+      p2: "Rythme : 2 à 3 sem. Entreprise / 2 à 3 sem. École",
+      p3: "Spécialisé dans le développement d'applications web (Python/Django, React, PHP/Laravel) et l'ingénierie des données, je mets mon expertise technique et mon esprit d'initiative au service de projets logiciels performants et scalables.",
+      p4: "Passionné par les technologies numériques et Cofondateur de la Startup AnWouKa IT Solutions, je combine rigueur technique et créativité pour concevoir des solutions applicatives robustes, évolutives et adaptées aux besoins métiers.",
     },
     experience: {
       title: "Expérience",
