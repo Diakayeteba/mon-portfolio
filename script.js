@@ -519,7 +519,7 @@ const translations = {
     contact: {
       title: "Me Contacter",
       subtitle:
-        "Je suis actuellement à la recherche d'une alternance en développement IA ou architecture des systèmes d'information. N'hésitez pas à me contacter pour toute opportunité !",
+        "Admis en Master 1 SIGLIS à l'UPPA, je suis actuellement à la recherche d'une alternance de 24 mois en développement Full-Stack, ingénierie logicielle ou IA. N'hésitez pas à me contacter !",
       email: "Envoyer un Email",
       linkedin: "LinkedIn",
     },
