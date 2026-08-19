@@ -14,12 +14,7 @@
                                                          EXPÉRIENCE
                                                          Développeur Web Freelance, Auto-Entrepreneur
                                                          Janv. 2026
-RÉSUMÉ                                                   Développer un tableau de bord interactif avec Vue.js pour visualiser en temps réel les
-                                                         statistiques académiques. Mettre en place un environnement CI/CD pour automatiser le
-Actuellement en Master 1 Intelligence Artificielle, je   déploiement et les tests de l'application. Intégrer une API de paiement sécurisé pour
-recherche une alternance pour mettre mon expertise       faciliter les transactions financières dans l'application éducative.
-technique au service de vos projets en tant que
-Développeur IA ou Architecte des SI.                     Enseignant de Mathématiques, Lycée Privé Fatoumata Siré, Bamako
+RÉSUMÉ                                                   Conception & Développement : Création de plateformes web, vitrines et applications sur-mesure (DEBLOQUE-BTP, GELGEC, Diak-Service). Architecture & API : Intégration d'APIs REST, gestion de bases de données (MySQL, PostgreSQL) et systèmes de paiement. Déploiement & SEO : Hébergement et optimisation du référencement naturel pour l'acquisition client.             Enseignant de Mathématiques, Lycée Privé Fatoumata Siré, Bamako
                                                          Janv. 2025
 COMPÉTENCES                                                Amélioration des résultats des élèves de 20% en un an.
                                                            Mise en place de projets mathématiques pratiques et engageants.
